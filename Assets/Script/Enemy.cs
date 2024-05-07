@@ -16,26 +16,27 @@ public class Enemy : MonoBehaviour
 
     private Life _lifeScript;   //recup script vie player pr la fonction TakeDamage()
 
-    private bool inTrigger=false;
-    
+    //Enemy Life 
     private int ActualHealth;
+    private bool dead=false;
 
-    //Ennemi
+    //Physic Enemy
     private SpriteRenderer skin;
     private Rigidbody2D rb;
     private Animator anim;
-    //Player
+
+    //Physic Player
     private GameObject player;
     private Rigidbody2D rb_player;
     private Animator animPlayer;
     
-
     //Mouvement
     [SerializeField]
     private Vector3[] positions;
     private int index;
 
-
+    //Autres 
+    private bool inTrigger=false;
 
 
     void Start()
@@ -64,13 +65,11 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         animCheck();
-        if(ActualHealth <= 0){
-                // if (anim.HasTrigger("mort")){
-                //     anim.SetTrigger("mort");
-                // }
-                //Invoke("Destroy(gameObject)",1f);
-
-                Destroy(gameObject);
+        if(ActualHealth <= 0 && !dead){
+                dead=true;
+                anim.SetTrigger("mort");
+                GetStuff();
+                Invoke("Destroy",1.5f);
             }
         if (positions.Length != 0){
             Move();
@@ -137,13 +136,26 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    
+    //Set Up l'invicibilité du player apres prise de degats
     private IEnumerator CallPlayerInvincibility(){
         Debug.Log("début d'invicibilité");
         player.GetComponent<Life>().invincible = true; //tps d'invincibilité à check 
         yield return new WaitForSeconds(0.5f);
         player.GetComponent<Life>().invincible = false;
         Debug.Log("fin d'invicibilité");
+    }
+
+    //Mort de l'ennemi
+    void Destroy(){
+        Destroy(gameObject);
+    }
+
+    //Set Up stuff
+    void GetStuff(){
+        GameObject stuff = GameObject.Instantiate(GameObject.FindGameObjectWithTag("stuff"));
+        stuff.transform.localPosition = transform.localPosition;
+        stuff.name += gameObject.name;
+        Debug.Log("stuff créé");
     }
 
     //Visuals

@@ -7,21 +7,26 @@ using UnityEngine.Rendering.Universal;
 
 public class Life : MonoBehaviour
 {
+//Life
+    [Header("Life")]
     public static int InitialHealth=100;
     public static int ActualHealth;
+    [HideInInspector]
+    public bool invincible = false;
+    private bool dead=false;
     
-    [Header("Saturation")]
+//UI
+    [Header("UI")]
+    [SerializeField] private Text _txtVie;
+
 //Saturation
     private VolumeProfile _volProfile;
     private ColorAdjustments _colorAdjustments;
 
-    [Header("UI")]
-    [SerializeField] private Text _txtVie;
-
-    [HideInInspector]
-    public bool invincible = false;
-
+//Physic
     private Collider2D _monColl;
+
+//Anim
     private Animator anim;
 
 
@@ -80,19 +85,26 @@ public class Life : MonoBehaviour
         ActualHealth = InitialHealth;
     }
 
+    void isALive(){
+        if (ActualHealth<=0! && !dead){ 
+            dead=true;
+            anim.SetTrigger("mort");
+            Invoke("Respawn",1.5f);
+        }
+    }
+
+    void Respawn(){
+        //changer posittion en le dernier de la liste c'est à dire .Count - 1
+        transform.position = CheckPoint.checkpoint[CheckPoint.checkpoint.Count-1];
+        ActualHealth = InitialHealth;
+    }
+
+ //UI   
     void RefreshUI(){
         if (ActualHealth<0){
             ActualHealth=0;
         }
         _txtVie.text = ActualHealth + " / " + InitialHealth;
-    }
-
-    void isALive(){
-        if (ActualHealth<=0){ 
-            //changer pos en le dernier de la liste c'est à dire .Count - 1
-            transform.position = CheckPoint.checkpoint[CheckPoint.checkpoint.Count-1];
-            ActualHealth = InitialHealth;
-        }
     }
     
 }

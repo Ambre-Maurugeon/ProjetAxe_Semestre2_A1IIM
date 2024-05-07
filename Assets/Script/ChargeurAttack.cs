@@ -8,6 +8,7 @@ public class ChargeurAttack : MonoBehaviour
     [Header("Charge")]
     [SerializeField] private float distance=10;
     [SerializeField] private float speedAttack=1.5f;
+    [SerializeField] private float cooldownCharge=3f;
 
     //Detection du Player
     [Header("Player Detection")]
@@ -41,30 +42,35 @@ public class ChargeurAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        //animCheck();
+        animCheck();
 
         if(GetComponent<ScreenVisibility>().OnScreen == true && !playingCharge){
             anim.SetTrigger("prepCharge");
             Debug.Log("l'attaque du chargeur commence");
             GetOrientAttack();
-            Invoke("Charge",5f);
         } else if (playingCharge){
             Charge();
         }
     }
 
     void Charge(){
+        playingCharge=true;
+        //anim.SetBool("run", true);
         transform.localPosition = Vector2.MoveTowards(transform.localPosition, destination, speedAttack * Time.deltaTime);
+        if(transform.localPosition==destination){
+            Debug.Log("charge finie");
+            StartCoroutine(WaitCooldown());
+        }
     }
 
     void animCheck(){
-        anim.SetFloat("run", _rb.velocity.x);
+       anim.SetBool("run", playingCharge);
     }
 
     void GetOrientAttack(){
-        playingCharge=true;
         float orientX = Detection();
         destination = new Vector3(transform.localPosition.x + distance * orientX,transform.localPosition.y,transform.localPosition.z);
+        Invoke("Charge",3f);
     }
 
     private int Detection(){
@@ -80,7 +86,7 @@ public class ChargeurAttack : MonoBehaviour
                 detectionPoint.position, // origine
                 Vector2.left,                // direction 
                 _detectionLength
-                //,_playerMask                 
+                ,_playerMask                 
             );
 
             if(hitRight.collider != null){
@@ -97,18 +103,11 @@ public class ChargeurAttack : MonoBehaviour
         return 0;
     }
 
-//Voir les raycast
-    // void OnDrawGizmos()
-    // {
-    //     Gizmos.color = Color.red; // Change color as desired
-
-    //     // Draw the raycast line from origin to maximum detection length
-    //     Gizmos.DrawLine(detectionPoint.position, detectionPoint.position + Vector2.right * _detectionLength);
-
-    //     // Draw a sphere at the end of the raycast line (optional)
-    //     if (hitRight.collider != null)
-    //     {
-    //         Gizmos.DrawSphere(hitRight.point, 0.1f); // Adjust sphere size as needed
-    //     }
-    // }
+//Cooldown apres une attaque
+    private IEnumerator WaitCooldown(){
+        anim.SetBool("pause",true); // idl ou fin de charge
+        yield return new WaitForSeconds(cooldownCharge);
+        anim.SetBool("pause",false);  // idl ou fin de charge
+        playingCharge=false;
+    }
 }
