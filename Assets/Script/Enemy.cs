@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int dmgPlayerAttack=10;
 
     [Header("Attaque")]
-    [SerializeField] private int damageColl;
+    public int damageColl;
 
     [Header("UI")]
     [SerializeField] private Text _txtVie;
@@ -56,10 +56,6 @@ public class Enemy : MonoBehaviour
         float posX = GetComponent<Transform>().position.x;
         float posY = GetComponent<Transform>().position.y;
         float posZ = GetComponent<Transform>().position.z;
-
-        //Vector3[] positions = {new Vector3(posX+2, posY, posZ), new Vector3(posX-2, posY, posZ)};
-        //positions[0] = new Vector3(posX+2, posY, posZ);
-        //positions[1] = new Vector3(posX-2, posY, posZ);
     }
 
     // Update is called once per frame

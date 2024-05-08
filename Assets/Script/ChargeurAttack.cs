@@ -6,6 +6,7 @@ public class ChargeurAttack : MonoBehaviour
 {
     //Charge
     [Header("Charge")]
+    [SerializeField] private int dmgInCharge=45;
     [SerializeField] private float distance=10;
     [SerializeField] private float speedAttack=1.5f;
     [SerializeField] private float cooldownCharge=10f;
@@ -18,14 +19,16 @@ public class ChargeurAttack : MonoBehaviour
     
     //Charge
     private Vector3 destination;
-    
-    //Physics
-    private Rigidbody2D _rb;
-    private SpriteRenderer skin;
+    private int dmgColl; //degats du collider sans charge
 
     //Autres
     private bool playingCharge = false;
     private bool waitingCooldown = false;
+    
+    //Component
+    private Rigidbody2D _rb;
+    private SpriteRenderer skin;
+    private Enemy _enemy;
 
     //Anim
     private Animator anim;
@@ -34,18 +37,21 @@ public class ChargeurAttack : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
-        skin = GetComponent<SpriteRenderer>();  
+        skin = GetComponent<SpriteRenderer>(); 
+        _enemy = GetComponent<Enemy>();
+        dmgColl = _enemy.damageColl;
     }
 
     void Update()
     {   
         animCheck();
+        _enemy.damageColl =  DamageValue();
 
         if(GetComponent<ScreenVisibility>().OnScreen == true && !playingCharge && !waitingCooldown){
             anim.SetTrigger("prepCharge");
             Debug.Log("l'attaque du chargeur commence");
             GetOrientAttack();
-        } else if (playingCharge && !waitingCooldown){
+        } else if (playingCharge){
             Charge();
         }
     }
@@ -108,5 +114,14 @@ public class ChargeurAttack : MonoBehaviour
         yield return new WaitForSeconds(cooldownCharge);
         Debug.Log("fin cooldown");
         waitingCooldown = false;
+    }
+
+// Attaque plus forte lors de la charge
+    private int DamageValue(){
+        if(playingCharge){
+           return dmgInCharge;
+        } else {
+            return dmgColl;
+        }
     }
 }
