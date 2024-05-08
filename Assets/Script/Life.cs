@@ -59,7 +59,6 @@ public class Life : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _UpdateSaturation();
         isALive();
         RefreshUI();
     }
@@ -69,28 +68,39 @@ public class Life : MonoBehaviour
             StartCoroutine(Invicibility());
             anim.SetTrigger("hit");
             ActualHealth -= damage;
-            //_colorAdjustments.saturation.value = _colorAdjustments.saturation.value - 33;
+            DimSaturation();
             if(ActualHealth<=0){
                 Debug.Log("Le joueur est mort");
             }
         }
     }
 
-    IEnumerator Invicibility(){
+    public IEnumerator Invicibility(){
+        //Debug.Log("debut d'invicibilité");
         invincible = true;
         yield return new WaitForSeconds(invicibilityDuration); // tps d'invincibilité
         invincible = false;
+        //Debug.Log("fin d'invicibilité");
     }
 
 //Saturation
-    private void _UpdateSaturation(){
+
+    public void DimSaturation(){
         if(ActualHealth <=100 && ActualHealth > 66){
             _colorAdjustments.saturation.value = 0;
-        } else if(ActualHealth <= 66 && ActualHealth >33){
-            _colorAdjustments.saturation.value = -50;
-        } else {
-            _colorAdjustments.saturation.value = -100;
-        }
+            } else if(ActualHealth <= 66 && ActualHealth >33){
+                _colorAdjustments.saturation.value = -50;
+            } else {
+                _colorAdjustments.saturation.value = -100;
+            }
+    }
+
+    public void AugSaturation(){
+        _colorAdjustments.saturation.value += 1;
+    }
+
+    public void SetSaturation(){
+        _colorAdjustments.saturation.value = -100+ActualHealth; // qd il entre ds l'arbre de vie : sat = vie
     }
 
 //Mort

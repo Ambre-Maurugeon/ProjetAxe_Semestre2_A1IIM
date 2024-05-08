@@ -49,7 +49,7 @@ public class ChargeurAttack : MonoBehaviour
 
         if(GetComponent<ScreenVisibility>().OnScreen == true && !playingCharge && !waitingCooldown){
             anim.SetTrigger("prepCharge");
-            Debug.Log("l'attaque du chargeur commence");
+            //Debug.Log("l'attaque du chargeur commence");
             GetOrientAttack();
         } else if (playingCharge){
             Charge();
@@ -61,7 +61,7 @@ public class ChargeurAttack : MonoBehaviour
         transform.localPosition = Vector2.MoveTowards(transform.localPosition, destination, speedAttack * Time.deltaTime);
         if(transform.localPosition==destination){
             playingCharge=false;
-            Debug.Log("charge finie");
+            //Debug.Log("charge finie");
             StartCoroutine(WaitCooldown());
         }
     }
@@ -109,10 +109,10 @@ public class ChargeurAttack : MonoBehaviour
 
 //Cooldown apres une attaque
     private IEnumerator WaitCooldown(){
-        Debug.Log("debut cooldown");
+        //Debug.Log("debut cooldown");
         waitingCooldown = true;
         yield return new WaitForSeconds(cooldownCharge);
-        Debug.Log("fin cooldown");
+        //Debug.Log("fin cooldown");
         waitingCooldown = false;
     }
 

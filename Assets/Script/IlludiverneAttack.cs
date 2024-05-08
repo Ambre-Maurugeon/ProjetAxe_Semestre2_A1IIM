@@ -24,8 +24,6 @@ public class IlludiverneAttack : MonoBehaviour
 
 //Attack
     private float cooldownTimer = Mathf.Infinity;
-        //private bool inTrigger;
-
 //Random positions de tir
     private float changePosTimer = 0;
     private System.Random rdm;

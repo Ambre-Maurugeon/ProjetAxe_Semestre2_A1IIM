@@ -84,7 +84,7 @@ public class Enemy : MonoBehaviour
     public IEnumerator AttackOpponent(int dmg){
         yield return new WaitForSeconds(0.5f);  // attendre le temps du déclenchement de l'anim
         if(inTrigger){
-            StartCoroutine(CallPlayerInvincibility());
+            StartCoroutine(_lifeScript.Invicibility());          // au moment où le joueur attaque il est safe (check pertinence)
             ActualHealth -= dmg;
         } 
         
@@ -130,15 +130,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    //Invicibilité du player apres degats
-    private IEnumerator CallPlayerInvincibility(){
-        Debug.Log("début d'invicibilité");
-        player.GetComponent<Life>().invincible = true; //tps d'invincibilité à check 
-        yield return new WaitForSeconds(0.5f);
-        player.GetComponent<Life>().invincible = false;
-        Debug.Log("fin d'invicibilité");
-    }
-
     //Mort de l'ennemi
     void Destroy(){
         Destroy(gameObject);
@@ -147,9 +138,9 @@ public class Enemy : MonoBehaviour
     //Set Up stuff
     void GetStuff(){
         GameObject stuff = GameObject.Instantiate(GameObject.FindGameObjectWithTag("stuff"));
-        stuff.transform.localPosition = transform.localPosition;
+        stuff.transform.localPosition = transform.position;
         stuff.name += gameObject.name;
-        Debug.Log("stuff créé");
+        Debug.Log("stuff créé : " + stuff.transform.localPosition + "ennemi position :" + transform.position);
     }
 
     //Visuals

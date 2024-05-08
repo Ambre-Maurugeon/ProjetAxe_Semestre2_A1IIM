@@ -6,26 +6,36 @@ using UnityEngine.Rendering.Universal;
 
 public class ArbreVie : MonoBehaviour
 {
+
+    //Gerer la vitesse d'augmentation de la vie
+    [SerializeField] private float speed=0.1f;
+    private bool wait=false;
+
+    // vitesse d'augmentation de la saturation
+    private Life _life;
+
+    //Autres
     private bool inTrigger=false;
 
-    // Start is called before the first frame update
-    void Start()
-    { 
+
+    void Start(){
+        _life = FindObjectOfType<Life>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(inTrigger){
-            StartCoroutine(Heal());
+        if(inTrigger && !wait){
+           StartCoroutine(Heal());
         }
     }
 
     IEnumerator Heal(){
-        if (Life.ActualHealth<Life.InitialHealth){
+        if(Life.ActualHealth<Life.InitialHealth){
+            wait = true;
             Life.ActualHealth +=1;
-
-            yield return new WaitForSeconds(0.15f);
+            yield return new WaitForSeconds(speed);
+           _life.AugSaturation();
+            wait = false;
         }
     }
 
@@ -35,6 +45,7 @@ public class ArbreVie : MonoBehaviour
     {
         if (truc.tag == "Player") {
             inTrigger=true;
+            _life.SetSaturation();
         }
     }
 
@@ -44,4 +55,5 @@ public class ArbreVie : MonoBehaviour
             inTrigger=false;
         }
     }
+
 }
