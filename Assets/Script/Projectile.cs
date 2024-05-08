@@ -20,17 +20,17 @@ public class Projectile : MonoBehaviour
 
    void Update()
    {
-    if(hit) return;
-    Vector3 movement = speed * Time.deltaTime * direction;
-    transform.Translate(movement);
+        if(hit) return;
+        Vector3 movement = speed * Time.deltaTime * direction;
+        transform.Translate(movement);
 
-    lifetime += Time.deltaTime;
-    if(lifetime > 2.5f){
-        anim.SetTrigger("explode");
-    }
-    if(lifetime > 3){
-        gameObject.SetActive(false);
-    }
+        lifetime += Time.deltaTime;
+        if(lifetime > 2.5f){
+            anim.SetTrigger("explode");
+        }
+        if(lifetime > 3){
+            gameObject.SetActive(false);
+        }
    }
 
    private void OnTriggerEnter2D(Collider2D collision)
