@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 {
     [Header("Defense")]
     [SerializeField] private int InitialHealth=50;
+    [SerializeField] private int dmgPlayerAttack=10;
 
     [Header("Attaque")]
     [SerializeField] private int damageColl;
@@ -68,16 +69,15 @@ public class Enemy : MonoBehaviour
         if(ActualHealth <= 0 && !dead){
                 dead=true;
                 anim.SetTrigger("mort");
-                GetStuff();
-                Invoke("Destroy",1.5f);
+                Invoke("Destroy",1f);
+                Invoke("GetStuff",1f);
             }
         if (positions.Length != 0){
             Move();
         }
-        if (Input.GetKeyDown(KeyCode.E)){
-            StartCoroutine(AttackOpponent(10));
+        if (Input.GetMouseButtonDown(0)){
+            StartCoroutine(AttackOpponent(dmgPlayerAttack));
         }
-        //StartCoroutine(AttackOpponent(10));
         RefreshUI();
     }
 
@@ -86,13 +86,11 @@ public class Enemy : MonoBehaviour
     }
 
     public IEnumerator AttackOpponent(int dmg){
-        //if(inTrigger && Input.GetKeyDown(KeyCode.E)){
-            yield return new WaitForSeconds(0.5f);  // attendre le temps du déclenchement de l'anim
-            if(inTrigger){
-                StartCoroutine(CallPlayerInvincibility());
-                ActualHealth -= dmg;
-            } 
-        //}
+        yield return new WaitForSeconds(0.5f);  // attendre le temps du déclenchement de l'anim
+        if(inTrigger){
+            StartCoroutine(CallPlayerInvincibility());
+            ActualHealth -= dmg;
+        } 
         
     }
 
@@ -111,7 +109,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    //IEnumerator
+    //Degats au contact (IEnumerator)
     void OnCollisionEnter2D(Collision2D collision){
         if(collision.gameObject.CompareTag("Player")){
             //while (Life.ActualHealth>0){
@@ -136,7 +134,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    //Set Up l'invicibilité du player apres prise de degats
+    //Invicibilité du player apres degats
     private IEnumerator CallPlayerInvincibility(){
         Debug.Log("début d'invicibilité");
         player.GetComponent<Life>().invincible = true; //tps d'invincibilité à check 

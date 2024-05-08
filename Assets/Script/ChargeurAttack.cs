@@ -8,25 +8,24 @@ public class ChargeurAttack : MonoBehaviour
     [Header("Charge")]
     [SerializeField] private float distance=10;
     [SerializeField] private float speedAttack=1.5f;
-    [SerializeField] private float cooldownCharge=3f;
+    [SerializeField] private float cooldownCharge=10f;
 
     //Detection du Player
     [Header("Player Detection")]
     [SerializeField] private Transform[] _detectionPoints;
     [SerializeField] private LayerMask _playerMask;
     [SerializeField] private float _detectionLength = 0.05f;
-
     
     //Charge
     private Vector3 destination;
-
-    //
-    private bool playingCharge = false;
-
+    
     //Physics
     private Rigidbody2D _rb;
     private SpriteRenderer skin;
-    //private GameObject player;
+
+    //Autres
+    private bool playingCharge = false;
+    private bool waitingCooldown = false;
 
     //Anim
     private Animator anim;
@@ -36,35 +35,34 @@ public class ChargeurAttack : MonoBehaviour
         anim = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
         skin = GetComponent<SpriteRenderer>();  
-        //player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {   
         animCheck();
 
-        if(GetComponent<ScreenVisibility>().OnScreen == true && !playingCharge){
+        if(GetComponent<ScreenVisibility>().OnScreen == true && !playingCharge && !waitingCooldown){
             anim.SetTrigger("prepCharge");
             Debug.Log("l'attaque du chargeur commence");
             GetOrientAttack();
-        } else if (playingCharge){
+        } else if (playingCharge && !waitingCooldown){
             Charge();
         }
     }
 
     void Charge(){
         playingCharge=true;
-        //anim.SetBool("run", true);
         transform.localPosition = Vector2.MoveTowards(transform.localPosition, destination, speedAttack * Time.deltaTime);
         if(transform.localPosition==destination){
+            playingCharge=false;
             Debug.Log("charge finie");
             StartCoroutine(WaitCooldown());
         }
     }
 
     void animCheck(){
-       anim.SetBool("run", playingCharge);
+        anim.SetBool("run", playingCharge);
+        anim.SetBool("pause",waitingCooldown); // idl ou fin de charge pr les visuels
     }
 
     void GetOrientAttack(){
@@ -105,9 +103,10 @@ public class ChargeurAttack : MonoBehaviour
 
 //Cooldown apres une attaque
     private IEnumerator WaitCooldown(){
-        anim.SetBool("pause",true); // idl ou fin de charge
+        Debug.Log("debut cooldown");
+        waitingCooldown = true;
         yield return new WaitForSeconds(cooldownCharge);
-        anim.SetBool("pause",false);  // idl ou fin de charge
-        playingCharge=false;
+        Debug.Log("fin cooldown");
+        waitingCooldown = false;
     }
 }

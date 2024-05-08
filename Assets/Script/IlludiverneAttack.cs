@@ -1,31 +1,55 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class EnemyAttack : MonoBehaviour
+public class IlludiverneAttack : MonoBehaviour
 {
+    [Header("Data Attaque")]
     [SerializeField] private float attackCooldown;
 
+    [Header("Bullet hell")]
+//Points d'origine
     [SerializeField] private Transform firePoint;
     [SerializeField] private Transform firePoint2;
 
+//Balles
     [SerializeField] private GameObject[] fireballs; //Pattern1
     [SerializeField] private GameObject[] fireballs2; //Pattern2
 
-    private Animator anim;
-    private Enemy enemyMovement;
-    private float cooldownTimer = Mathf.Infinity;
+//Positions des points d'origine
+    [SerializeField] private float cooldownChangePos = 10f;
+    [SerializeField] private Vector3[] _firePoint01Pos;
+    [SerializeField] private Vector3[] _firePoint02Pos;
 
-    //private bool inTrigger;
+//Attack
+    private float cooldownTimer = Mathf.Infinity;
+        //private bool inTrigger;
+
+//Random positions de tir
+    private float changePosTimer = 0;
+    private System.Random rdm;
+
+//Autres
+        //private bool inTrigger;
+
+    //Anim
+    private Animator anim;
+        //private Enemy enemyMovement;
+
+
 
     private void Awake(){
         anim= GetComponent<Animator>();
-        enemyMovement= GetComponent<Enemy>();
+        //enemyMovement= GetComponent<Enemy>();
     }
 
     void Update(){
-        if(Input.GetMouseButton(0) && cooldownTimer>attackCooldown){
-            Attack();
+        if(GetComponent<ScreenVisibility>().OnScreen == true){
+            FindNewPosition();
+            if(cooldownTimer>attackCooldown){
+                Attack();
+            }
         }
         cooldownTimer+= Time.deltaTime;
     }
@@ -64,6 +88,21 @@ public class EnemyAttack : MonoBehaviour
             }
         }
         return 0;
+    }
+
+
+//Random Position
+    private int firePointPosition(){
+        rdm = new System.Random();
+        return rdm.Next(_firePoint01Pos.Length);
+    }
+
+    private void FindNewPosition(){
+        changePosTimer += Time.deltaTime;
+        if(changePosTimer>=cooldownChangePos){
+            firePoint2.localPosition =  _firePoint01Pos[firePointPosition()];
+            changePosTimer = 0;
+        }
     }
 
 

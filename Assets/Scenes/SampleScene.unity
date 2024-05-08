@@ -1727,6 +1727,7 @@ GameObject:
   - component: {fileID: 378890663}
   - component: {fileID: 378890665}
   - component: {fileID: 378890669}
+  - component: {fileID: 378890670}
   m_Layer: 0
   m_Name: Illudiverne
   m_TagString: Enemy
@@ -1821,6 +1822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialHealth: 50
+  dmgPlayerAttack: 10
   damageColl: 30
   _txtVie: {fileID: 601569574}
   positions: []
@@ -1965,6 +1967,32 @@ MonoBehaviour:
   - {fileID: 1445492128}
   - {fileID: 404508437}
   - {fileID: 130392272}
+  _firePoint01Pos:
+  - {x: -0.578, y: -0.15, z: 0}
+  - {x: -0.581, y: 0.22, z: 0}
+  - {x: -0.452, y: 0.542, z: 0}
+  - {x: -0.066, y: 0.757, z: 0}
+  - {x: 0.461, y: 0.638, z: 0}
+  - {x: 0.598, y: 0.322, z: 0}
+  - {x: 0.624, y: -0.042, z: 0}
+  - {x: 0.605, y: -0.343, z: 0}
+  _firePoint02Pos: []
+--- !u!114 &378890670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378890661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754b96f1ae6ed8a4c8828b441af1d56b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objet01Transform: {fileID: 1662037320}
+  objet02Transform: {fileID: 378890662}
+  mainCamera: {fileID: 519420031}
+  OnScreen: 0
 --- !u!1 &404508437
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,7 +2517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -299.3, y: -172.05}
+  m_AnchoredPosition: {x: -299.238, y: -172.958}
   m_SizeDelta: {x: 4.7622, y: 1.8008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &601569574
@@ -3120,7 +3148,7 @@ Transform:
   m_GameObject: {fileID: 843643750}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.235, y: 0.118, z: 0}
+  m_LocalPosition: {x: 0.605, y: -0.343, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3560,6 +3588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialHealth: 20
+  dmgPlayerAttack: 10
   damageColl: 30
   _txtVie: {fileID: 703892450}
   positions:
@@ -4130,6 +4159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialHealth: 50
+  dmgPlayerAttack: 10
   damageColl: 30
   _txtVie: {fileID: 252232169}
   positions: []
@@ -4211,7 +4241,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319440047}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -5247,9 +5277,9 @@ Transform:
   m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 2000336156}
   - {fileID: 519420032}
   - {fileID: 2099445865}
-  - {fileID: 2000336156}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &1662037321
@@ -5301,8 +5331,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NormalSpeed: 5
   jump: 6
-  deccalageGroundcheck: -1.59
+  slash: {fileID: 2000336155}
   tr: {fileID: 1662037326}
+  deccalageGroundcheck: -1.59
   IsWallJumping: 0
 --- !u!114 &1662037323
 MonoBehaviour:
@@ -5316,8 +5347,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b710fe3a6a0cd8e4da55dc9324b4f321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _txtVie: {fileID: 1783755390}
   invincible: 0
+  _txtVie: {fileID: 1783755390}
 --- !u!114 &1662037324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6182,7 +6213,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2000336156
 Transform:
   m_ObjectHideFlags: 0
@@ -6192,8 +6223,8 @@ Transform:
   m_GameObject: {fileID: 2000336155}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09, y: 0, z: 0}
-  m_LocalScale: {x: 0.74999994, y: 0.74999994, z: 0.74999994}
+  m_LocalPosition: {x: 0.07, y: -0.06, z: 0}
+  m_LocalScale: {x: 0.56, y: 0.56, z: 0.56}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1662037320}
@@ -6259,8 +6290,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b5c5fdc3b0be714439d25dd0ee98e154, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: d2747dc55d1f1b0479e8eb20366d09aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

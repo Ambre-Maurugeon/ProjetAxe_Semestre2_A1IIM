@@ -5,18 +5,20 @@ using UnityEngine;
 public class Controls : MonoBehaviour
 {
     [Header("Horizontal Mvt")]
-    [Range(2,10)]
     public float NormalSpeed;
 
     [Header("Vertical Mvt")]
-    [Range(1,10)]
     public float jump ;
+
+    [Header("Attaque")]
+    [SerializeField] private GameObject slash;
+    
+    [Header("Dash")]
+    [SerializeField] private TrailRenderer tr;
 
     [Header("Grounded")]
     public float deccalageGroundcheck = -1;
 
-    [Header("Dash")]
-    [SerializeField] private TrailRenderer tr;
 
     private Rigidbody2D _rb;
     private Collider2D _monColl;
@@ -243,9 +245,13 @@ public class Controls : MonoBehaviour
     void flipCheck() {
         if(Input.GetAxisRaw("Horizontal") < 0) {
             _skin.flipX = true;
+            slash.transform.localPosition = new Vector3(-0.05f, -0.06f,transform.localPosition.z);
+            slash.GetComponent<SpriteRenderer>().flipX =true;
         }
         if (Input.GetAxisRaw("Horizontal") > 0) {
             _skin.flipX = false;
+            slash.transform.localPosition = new Vector3(0.07f, -0.06f,transform.localPosition.z);
+            slash.GetComponent<SpriteRenderer>().flipX =false;
         }
     }
 
@@ -253,8 +259,9 @@ public class Controls : MonoBehaviour
         anim.SetFloat("velocityX", Mathf.Abs(_rb.velocity.x));
         anim.SetFloat("velocityY", _rb.velocity.y);
         anim.SetBool("grounded", grounded);
-        if (Input.GetKeyDown(KeyCode.E)){
+        if (Input.GetMouseButtonDown(0)){
             anim.SetTrigger("attack");
+            slash.GetComponent<Animator>().SetTrigger("slash");
         }
     }
 

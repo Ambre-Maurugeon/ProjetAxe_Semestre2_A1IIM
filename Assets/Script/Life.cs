@@ -11,6 +11,8 @@ public class Life : MonoBehaviour
     [Header("Life")]
     public static int InitialHealth=100;
     public static int ActualHealth;
+    [SerializeField] private float invicibilityDuration=1.5f;
+    
     [HideInInspector]
     public bool invincible = false;
     private bool dead=false;
@@ -33,8 +35,6 @@ public class Life : MonoBehaviour
     void Awake(){
         _monColl = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
-        //GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
-
         
         GameObject _globVolume = GameObject.FindGameObjectWithTag("GlobalVolume");
         _volProfile = _globVolume.GetComponent<Volume>().profile;
@@ -59,6 +59,7 @@ public class Life : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        _UpdateSaturation();
         isALive();
         RefreshUI();
     }
@@ -68,7 +69,7 @@ public class Life : MonoBehaviour
             StartCoroutine(Invicibility());
             anim.SetTrigger("hit");
             ActualHealth -= damage;
-            _colorAdjustments.saturation.value = _colorAdjustments.saturation.value - 33;
+            //_colorAdjustments.saturation.value = _colorAdjustments.saturation.value - 33;
             if(ActualHealth<=0){
                 Debug.Log("Le joueur est mort");
             }
@@ -77,14 +78,22 @@ public class Life : MonoBehaviour
 
     IEnumerator Invicibility(){
         invincible = true;
-        yield return new WaitForSeconds(1.5f); // tps d'invincibilité
+        yield return new WaitForSeconds(invicibilityDuration); // tps d'invincibilité
         invincible = false;
     }
 
-    void InitCurrentLife(){
-        ActualHealth = InitialHealth;
+//Saturation
+    private void _UpdateSaturation(){
+        if(ActualHealth <=100 && ActualHealth > 66){
+            _colorAdjustments.saturation.value = 0;
+        } else if(ActualHealth <= 66 && ActualHealth >33){
+            _colorAdjustments.saturation.value = -50;
+        } else {
+            _colorAdjustments.saturation.value = -100;
+        }
     }
 
+//Mort
     void isALive(){
         if (ActualHealth<=0! && !dead){ 
             dead=true;
@@ -96,8 +105,20 @@ public class Life : MonoBehaviour
     void Respawn(){
         //changer posittion en le dernier de la liste c'est à dire .Count - 1
         transform.position = CheckPoint.checkpoint[CheckPoint.checkpoint.Count-1];
+        InitCurrentLife();
+        InitSaturation();
+        dead=false;
+    }
+
+// Réinitialisation
+    void InitCurrentLife(){
         ActualHealth = InitialHealth;
     }
+
+    void InitSaturation(){
+        _colorAdjustments.saturation.value = 0f;
+    }
+
 
  //UI   
     void RefreshUI(){
