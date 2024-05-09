@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Controls : MonoBehaviour
 {
+    [Header("Jump Buffer")]
+    [SerializeField] private float _jumpBufferDuration = 0.25f;
+    private float _jumpBufferTimer = 0f;
+
+
     [Header("Horizontal Mvt")]
     public float NormalSpeed;
 
@@ -57,11 +62,15 @@ public class Controls : MonoBehaviour
         _monColl= GetComponent<Collider2D>();
         _skin = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+
+        _CancelJumpBuffer();
     }
 
     // Update is called once per frame
     void Update()
     {
+        _UpdateJumpBuffer();
+
         groundCheck();
         _ApplyWallDetection();
 
@@ -82,7 +91,8 @@ public class Controls : MonoBehaviour
 
     }
 
-    void controlCheck(){
+    void controlCheck()
+    {
         if (isDashing){
             return;
         }
@@ -100,6 +110,19 @@ public class Controls : MonoBehaviour
             else if(bonusJump>0){
                 _rb.velocity = new Vector2(_rb.velocity.x, jump*2/3);
                 bonusJump=0;
+            }// initialisations jumpBuffer
+             else
+            {
+                _ResetJumpBuffer();
+            }
+        }
+
+        if(IsJumpBufferActive())
+        { //ajouter le isjumping ici
+            if (grounded) 
+            {
+                //pas persuadé que ça marche
+                _rb.velocity = new Vector2(_rb.velocity.x, jump);
             }
         }
 
@@ -239,6 +262,30 @@ public class Controls : MonoBehaviour
     //     _rb.AddForce(direction * wallJumpHorizontalForce, ForceMode2D.Impulse); // Ajoute la force horizontale
     //     _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); // Ajoute la force verticale
     // }
+
+//Jump Buffer
+    private void _ResetJumpBuffer()
+    {
+        _jumpBufferTimer = 0f;
+    }
+
+    private bool IsJumpBufferActive()
+    {
+        return _jumpBufferTimer < _jumpBufferDuration;
+    }
+
+    private void _CancelJumpBuffer()
+    {
+        _jumpBufferTimer = _jumpBufferDuration;
+    }
+
+    private void _UpdateJumpBuffer()
+    {
+        if (!IsJumpBufferActive()) return;
+        _jumpBufferTimer += Time.deltaTime;
+    }
+
+
 
 
 //Anim
