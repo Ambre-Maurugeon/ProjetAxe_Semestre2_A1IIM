@@ -22,8 +22,7 @@ public class EnemyBulletsAttack : MonoBehaviour
 
     [Header("Points d'origine")]
 //Points d'origine
-    [SerializeField] private Transform firePoint1; //pattern2
-    [SerializeField] private Transform firePoint2;  //pattern2
+    private List<Transform> firePoints = new List<Transform>(); // tous mes firePoints pour comparer leur Pos
 
     [Header("Positions des points d'origine")]
 //Positions des points d'origine
@@ -43,19 +42,24 @@ public class EnemyBulletsAttack : MonoBehaviour
 
     //Anim
     private Animator anim;
-        //private Enemy enemyMovement;
 
 
 
     private void Awake(){
         anim= GetComponent<Animator>();
-        //enemyMovement= GetComponent<Enemy>();
+    }
+
+    private void Start(){
+        foreach(var data in _pattern2Data){
+            firePoints.Add(data.firePoint);
+        }
+        Debug.Log("firePoints" + firePoints.Count);
     }
 
     void Update(){
         if(GetComponent<ScreenVisibility>().OnScreen == true){
             if(_pattern2Data.Length != 0){
-                FindNewPosition(firePoint1,firePoint2); 
+                FindNewPosition();
             }
             if(cooldownTimer>attackCooldown){
                 Attack();
@@ -121,22 +125,38 @@ public class EnemyBulletsAttack : MonoBehaviour
         return rdm.Next(_firePointPos.Length);  // index rdm dans le tableau des positions
     }
 
-    private void FindNewPosition(Transform firePointA, Transform firePointB = null){
+    private void FindNewPosition(){
         changePosTimer += Time.deltaTime;
-        if(changePosTimer>=cooldownChangePos){
-            firePointA.localPosition =  _firePointPos[firePointRandomPosition()];
-            if(firePointB != null){
-                firePointB.localPosition =  _firePointPos[firePointRandomPosition()];
-                if(firePointA.localPosition == firePointB.localPosition){
-                    FindNewPosition(firePointA);
-                } else{
-                    changePosTimer = 0;
+        if (changePosTimer >= cooldownChangePos)
+        {
+            foreach (Transform firePoint in firePoints)
+            {
+                int randomIndex = firePointRandomPosition();
+                Vector3 newPosition = _firePointPos[randomIndex];
+
+                while (!IsUniquePosition(newPosition))
+                {
+                    randomIndex = firePointRandomPosition();
+                    newPosition = _firePointPos[randomIndex];
                 }
-            } else{
-                changePosTimer = 0;
+
+                firePoint.localPosition = newPosition;
             }
+            changePosTimer = 0;
         }
     }
+
+    private bool IsUniquePosition(Vector3 positionToCheck){
+         foreach (Transform firePoint in firePoints)
+        {
+            if (firePoint.localPosition == positionToCheck)
+            {
+                return false; // pos existe deja 
+            }
+        }
+        return true; // pos unique
+    }
+
 
 
 //inTrigger

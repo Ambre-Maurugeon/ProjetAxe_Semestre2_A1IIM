@@ -292,12 +292,12 @@ public class Controls : MonoBehaviour
     void flipCheck() {
         if(Input.GetAxisRaw("Horizontal") < 0) {
             _skin.flipX = true;
-            slash.transform.localPosition = new Vector3(-0.05f, -0.06f,transform.localPosition.z);
+            slash.transform.localPosition = new Vector3(-0.352f, -0.06f,transform.localPosition.z);
             slash.GetComponent<SpriteRenderer>().flipX =true;
         }
         if (Input.GetAxisRaw("Horizontal") > 0) {
             _skin.flipX = false;
-            slash.transform.localPosition = new Vector3(0.07f, -0.06f,transform.localPosition.z);
+            slash.transform.localPosition = new Vector3(0.352f, -0.06f,transform.localPosition.z);
             slash.GetComponent<SpriteRenderer>().flipX =false;
         }
     }

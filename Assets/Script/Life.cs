@@ -84,17 +84,31 @@ public class Life : MonoBehaviour
     }
 
 //Saturation
-
+    //Dim drastique
     public void DimSaturation(){
-        if(ActualHealth <=100 && ActualHealth > 66){
+        if (ActualHealth >=166 && ActualHealth > 133)
+        {
+            _colorAdjustments.saturation.value = 66;
+        }
+        else if (ActualHealth <=133 && ActualHealth > 100)
+        {
+            _colorAdjustments.saturation.value = 33;
+        }
+        else if(ActualHealth <=100 && ActualHealth > 66){
             _colorAdjustments.saturation.value = 0;
-            } else if(ActualHealth <= 66 && ActualHealth >33){
-                _colorAdjustments.saturation.value = -50;
-            } else {
-                _colorAdjustments.saturation.value = -100;
-            }
+        }
+        else if(ActualHealth <= 66 && ActualHealth >33)
+        {
+            _colorAdjustments.saturation.value = -50;
+        } else if(ActualHealth <= 33)
+        {
+            _colorAdjustments.saturation.value = -100;
+        } else{
+            Debug.LogError("La vie est soit inférieure à 0 soit supérieure à 166");
+        }
     }
 
+    //Aug progressive
     public void AugSaturation(){
         _colorAdjustments.saturation.value += 1;
     }

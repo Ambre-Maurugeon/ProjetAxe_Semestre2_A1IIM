@@ -138,9 +138,9 @@ public class Enemy : MonoBehaviour
     //Set Up stuff
     void GetStuff(){
         GameObject stuff = GameObject.Instantiate(GameObject.FindGameObjectWithTag("stuff"));
+        stuff.GetComponent<ArbreVie>().lifeTime = 3f; //Arbre de vie temporaire
         stuff.transform.localPosition = transform.position;
         stuff.name += gameObject.name;
-        Debug.Log("stuff créé : " + stuff.transform.localPosition + "ennemi position :" + transform.position);
     }
 
     //Visuals
