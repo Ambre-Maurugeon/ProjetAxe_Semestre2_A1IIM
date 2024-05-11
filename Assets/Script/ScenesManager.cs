@@ -7,22 +7,28 @@ public class ScenesManager : MonoBehaviour
 {
     private static ScenesManager instance;
 
+    [SerializeField] private GameObject MenuPause;
+
     private void Awake(){
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+        if (instance != null && instance != this) 
+        { 
+            Destroy(this); 
         } 
-        else if (instance != this) 
-        {
-            Destroy(gameObject);
-            return;
-        }
+        else 
+        { 
+            instance = this; 
+        } 
     }
 
     void Update(){
-        if(Input.GetKey(KeyCode.Escape)){
-            GameObject.FindGameObjectWithTag("Pause").SetActive(true);
+        
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            if(!MenuPause.activeSelf){
+                    PauseGame();
+            }
+            else if (MenuPause.activeSelf){   
+                ResumeGame();
+            }
         }
     }
 
@@ -33,4 +39,23 @@ public class ScenesManager : MonoBehaviour
     public void Quit(){
         Application.Quit();
     }
+
+//Pause
+     void PauseGame()   //Met sur Pause
+    {
+        Time.timeScale = 0;
+        MenuPause.SetActive(true);
+    }
+
+    public void ResumeGame(){ //Reprendre la game
+        MenuPause.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    // public void PlayResumeGame()    
+    // {
+    //     Invoke("ResumeGame",1f);
+    // }
+
+    
 }
