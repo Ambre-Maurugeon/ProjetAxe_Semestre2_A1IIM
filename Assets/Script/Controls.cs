@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Controls : MonoBehaviour
@@ -13,11 +12,11 @@ public class Controls : MonoBehaviour
     public float NormalSpeed;
 
     [Header("Vertical Mvt")]
-    public float jump ;
+    public float jump;
 
     [Header("Attaque")]
     [SerializeField] private GameObject slash;
-    
+
     [Header("Dash")]
     [SerializeField] private TrailRenderer tr;
 
@@ -31,7 +30,7 @@ public class Controls : MonoBehaviour
     private Animator anim;
 
     //OrientX
-    private float _orientX =1;
+    private float _orientX = 1;
     private float _moveDirX = 0f;
 
     //Grounded
@@ -42,9 +41,9 @@ public class Controls : MonoBehaviour
     private int bonusJump;
 
     //WallJump
-    private bool IsTouchingWall=false;
+    private bool IsTouchingWall = false;
     [HideInInspector]
-    public bool IsWallJumping=false ;
+    public bool IsWallJumping = false;
 
     //Dash
     private bool canDash = true;
@@ -59,7 +58,7 @@ public class Controls : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _monColl= GetComponent<Collider2D>();
+        _monColl = GetComponent<Collider2D>();
         _skin = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
 
@@ -81,47 +80,53 @@ public class Controls : MonoBehaviour
         //flipCheck();
         animCheck();
     }
-        
-    void FixedUpdate(){
-        if (isDashing){
+
+    void FixedUpdate()
+    {
+        if (isDashing)
+        {
             return;
         }
 
-       _rb.velocity = new Vector2(horizontal * NormalSpeed, _rb.velocity.y);
+        _rb.velocity = new Vector2(horizontal * NormalSpeed, _rb.velocity.y);
 
     }
 
     void controlCheck()
     {
-        if (isDashing){
+        if (isDashing)
+        {
             return;
         }
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if(Input.GetButtonDown("Jump")){
-            if(IsSliding){
+        if (Input.GetButtonDown("Jump"))
+        {
+            if (IsSliding)
+            {
                 IsWallJumping = true;
                 WallJumpStart();
             }
-            else if(grounded){
+            else if (grounded)
+            {
                 _rb.velocity = new Vector2(_rb.velocity.x, jump);
             }
-            else if(bonusJump>0){
-                _rb.velocity = new Vector2(_rb.velocity.x, jump*2/3);
-                bonusJump=0;
+            else if (bonusJump > 0)
+            {
+                _rb.velocity = new Vector2(_rb.velocity.x, jump * 2 / 3);
+                bonusJump = 0;
             }// initialisations jumpBuffer
-             else
+            else
             {
                 _ResetJumpBuffer();
             }
         }
 
-        if(IsJumpBufferActive())
-        { //ajouter le isjumping ici
-            if (grounded) 
+        if (IsJumpBufferActive())
+        { 
+            if (grounded)
             {
-                //pas persuadé que ça marche
                 _rb.velocity = new Vector2(_rb.velocity.x, jump);
             }
         }
@@ -133,100 +138,119 @@ public class Controls : MonoBehaviour
         //     bonusJump=0;
         // }
 
-        if(Input.GetKeyDown(KeyCode.LeftShift)&& canDash){
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        {
             StartCoroutine(Dash());
         }
 
         // if(IsSliding && Input.GetKeyDown(KeyCode.Space)){
-            
+
         // }
 
         flipCheck();
     }
 
-//OrientX
-    private void _ChangeOrientFromHorizontalMovement(){
-        if(_moveDirX == 0f) return ; // et si pas d'accolades le if execute juste la ligne d'apres 
+    //OrientX
+    private void _ChangeOrientFromHorizontalMovement()
+    {
+        if (_moveDirX == 0f) return; // et si pas d'accolades le if execute juste la ligne d'apres 
         _orientX = Mathf.Sign(_moveDirX);
     }
 
-    private void GetInputMoveX(){
+    private void GetInputMoveX()
+    {
         _moveDirX = 0f;
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.Q)){
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.Q))
+        {
             _moveDirX = -1f;
         }
-        if (Input.GetKey(KeyCode.D)){
+        if (Input.GetKey(KeyCode.D))
+        {
             //Debug.Log(_orientX);
             _moveDirX = 1f;
         }
     }
 
-    void groundCheck(){
+    void groundCheck()
+    {
         grounded = false;
         colls = Physics2D.OverlapCircleAll(transform.position + Vector3.up * deccalageGroundcheck, _monColl.bounds.extents.x * 0.9f);
-        foreach(Collider2D coll in colls) {
-            if(coll != _monColl && !coll.isTrigger) {
+        foreach (Collider2D coll in colls)
+        {
+            if (coll != _monColl && !coll.isTrigger)
+            {
                 grounded = true;
-                bonusJump=1;
+                bonusJump = 1;
                 break;
             }
         }
     }
 
-//Dash
-    private IEnumerator Dash(){
+    //Dash
+    private IEnumerator Dash()
+    {
         canDash = false;
-        isDashing=true;
+        isDashing = true;
         float originalGravity = _rb.gravityScale;
         _rb.gravityScale = 0f;
         _rb.velocity = new Vector2(horizontal * dashingPower, 0f);
-        tr.emitting= true;
+        tr.emitting = true;
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
-        _rb.gravityScale=originalGravity;
-        isDashing = false; 
+        _rb.gravityScale = originalGravity;
+        isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
-        canDash=true;
+        canDash = true;
     }
 
 
-//Sliding
-    private void _ApplyWallDetection(){
-            IsTouchingWall = GetComponent<WallDetector>().DetectWallNearBy();
-        }
+    //Sliding
+    private void _ApplyWallDetection()
+    {
+        IsTouchingWall = GetComponent<WallDetector>().DetectWallNearBy();
+    }
     public bool IsSliding => IsTouchingWall && !grounded;
 
-//Wall jump01
-//Wall Jump
+    //Wall jump01
+    //Wall Jump
     private float _wallJumpTimer;
 
-    public void WallJumpStart(){
+    public void WallJumpStart()
+    {
         _orientX = -WallDetector.orientDetection;
-        _wallJumpTimer = 0f; 
+        _wallJumpTimer = 0f;
         _UpdateWallJump();
     }
 
-    private void _UpdateWallJump(){
-        _wallJumpTimer += Time.deltaTime;
-        if(_wallJumpTimer < 0.5f){
+    private void _UpdateWallJump()
+    {
+
+
+            _wallJumpTimer += Time.deltaTime;
+
+        if (_wallJumpTimer > 0.5f)
+        {
             Vector2 velocity = _rb.velocity;
-            
-            horizontal = 9*_orientX;
+
+            horizontal = 9 * _orientX;
             velocity.y = 6;
             //Debug.Log("orientX " + _orientX);
 
             //_rb.velocity = velocity;
             _rb.velocity = new Vector2(horizontal, 6f);
 
-        } else if(!grounded) {
+        }
+        else if (!grounded)
+        {
             //Debug.Log("tombe"); 
         }
-        else if (grounded){
+        else if (grounded)
+        {
             IsWallJumping = false;
         }
     }
 
-//wall Jump02
+    //wall Jump02
 
     private float jumpForce = 10f; // Force de saut vertical lors du wall jump
     private float wallJumpHorizontalForce = 50f; // Force horizontale lors du wall jump
@@ -263,7 +287,7 @@ public class Controls : MonoBehaviour
     //     _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); // Ajoute la force verticale
     // }
 
-//Jump Buffer
+    //Jump Buffer
     private void _ResetJumpBuffer()
     {
         _jumpBufferTimer = 0f;
@@ -288,35 +312,60 @@ public class Controls : MonoBehaviour
 
 
 
-//Anim
-    void flipCheck() {
-        if(Input.GetAxisRaw("Horizontal") < 0) {
+    //Anim
+    void flipCheck()
+    {
+        if (Input.GetAxisRaw("Horizontal") < 0)
+        {
             _skin.flipX = true;
-            slash.transform.localPosition = new Vector3(-0.352f, -0.06f,transform.localPosition.z);
-            slash.GetComponent<SpriteRenderer>().flipX =true;
+            slash.transform.localPosition = new Vector3(-0.352f, -0.06f, transform.localPosition.z);
+            slash.GetComponent<SpriteRenderer>().flipX = true;
         }
-        if (Input.GetAxisRaw("Horizontal") > 0) {
+        if (Input.GetAxisRaw("Horizontal") > 0)
+        {
             _skin.flipX = false;
-            slash.transform.localPosition = new Vector3(0.352f, -0.06f,transform.localPosition.z);
-            slash.GetComponent<SpriteRenderer>().flipX =false;
+            slash.transform.localPosition = new Vector3(0.352f, -0.06f, transform.localPosition.z);
+            slash.GetComponent<SpriteRenderer>().flipX = false;
         }
     }
 
-    void animCheck() {
+    void animCheck()
+    {
         anim.SetFloat("velocityX", Mathf.Abs(_rb.velocity.x));
         anim.SetFloat("velocityY", _rb.velocity.y);
         anim.SetBool("grounded", grounded);
-        if (Input.GetMouseButtonDown(0)){
+        if (Input.GetMouseButtonDown(0))
+        {
             anim.SetTrigger("attack");
             slash.GetComponent<Animator>().SetTrigger("slash");
         }
     }
 
-    private void OnDrawGizmos() {
-        if(_monColl == null) {
+    private void OnDrawGizmos()
+    {
+        if (_monColl == null)
+        {
             _monColl = GetComponent<CapsuleCollider2D>();
         }
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position + Vector3.up * deccalageGroundcheck, _monColl.bounds.extents.x * 0.9f);
+    }
+
+    [Header("Debug")]
+    [SerializeField] private bool _guiDebug = false;
+
+
+    private void OnGUI()
+    {
+        if (!_guiDebug) return;
+
+        GUILayout.BeginVertical(GUI.skin.box);
+        GUILayout.Label(gameObject.name);
+        GUILayout.Label($"Jump Buffer Timer = {_jumpBufferTimer}");
+        GUILayout.Label($"IsSliding = {IsSliding}");
+        GUILayout.Label($"grounded = {grounded}");
+        GUILayout.Label($"Horizontal Velocity = {_rb.velocity.x}");
+        GUILayout.Label($"Vertical Velocity = {_rb.velocity.y}");
+        GUILayout.EndVertical();
     }
 }
