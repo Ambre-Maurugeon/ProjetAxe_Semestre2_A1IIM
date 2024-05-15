@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WallDetector : MonoBehaviour
@@ -9,19 +7,34 @@ public class WallDetector : MonoBehaviour
     [SerializeField] private float _detectionLength = 0.05f;
     [SerializeField] private LayerMask _wallLayerMask;
 
-    public static float orientDetection {get; private set;}  
+    public static float orientDetection { get; private set; }
 
 
-    public bool DetectWallNearBy(){
-        foreach (Transform wallDetectionPoint in _wallDetectionPoints){
+    public bool DetectWallNearByRight()
+    {
+        foreach (Transform wallDetectionPoint in _wallDetectionPoints)
+        {
 
             RaycastHit2D hitRight = Physics2D.Raycast(
-                wallDetectionPoint.position, //origine
-                Vector2.right,            //direction
-                _detectionLength,
-                _wallLayerMask
-            );
+                     wallDetectionPoint.position, //origine
+                     Vector2.right,            //direction
+                     _detectionLength,
+                     _wallLayerMask
+                 );
 
+            if (hitRight.collider != null)
+            {
+                Debug.Log("Contact de WallDetector droit");
+
+                return true;
+            }
+        }
+        return false;
+    }
+    public bool DetectWallNearByLeft()
+    {
+        foreach (Transform wallDetectionPoint in _wallDetectionPoints)
+        {
             RaycastHit2D hitLeft = Physics2D.Raycast(
                 wallDetectionPoint.position, // origine
                 Vector2.left,                // direction 
@@ -29,16 +42,13 @@ public class WallDetector : MonoBehaviour
                 _wallLayerMask
             );
 
-            if(hitRight.collider != null || hitLeft.collider != null){
-                Debug.Log("Contact de WallDetector");
-                if(hitRight.collider != null){
-                    orientDetection=1;
-                }else{
-                    orientDetection=-1;
-                }
+            if (hitLeft.collider != null)
+            {
+                Debug.Log("Contact de WallDetector Left");
                 return true;
             }
         }
         return false;
+
     }
 }

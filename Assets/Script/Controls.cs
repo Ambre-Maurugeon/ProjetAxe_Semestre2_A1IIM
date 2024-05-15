@@ -21,13 +21,15 @@ public class Controls : MonoBehaviour
     [SerializeField] private TrailRenderer tr;
 
     [Header("Grounded")]
-    public float deccalageGroundcheck = -1;
+    public float deccalageGroundcheckX = -1f;
+    public float deccalageGroundcheck = -1f;
 
 
     private Rigidbody2D _rb;
     private Collider2D _monColl;
     private SpriteRenderer _skin;
     private Animator anim;
+    private WallDetector _detector;
 
     //OrientX
     private float _orientX = 1;
@@ -41,7 +43,8 @@ public class Controls : MonoBehaviour
     private int bonusJump;
 
     //WallJump
-    private bool IsTouchingWall = false;
+    private bool IsTouchingWallLeft = false;
+    private bool IsTouchingWallRight = false;
     [HideInInspector]
     public bool IsWallJumping = false;
 
@@ -61,6 +64,7 @@ public class Controls : MonoBehaviour
         _monColl = GetComponent<Collider2D>();
         _skin = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        _detector = GetComponent<WallDetector>();
 
         _CancelJumpBuffer();
     }
@@ -124,7 +128,7 @@ public class Controls : MonoBehaviour
         }
 
         if (IsJumpBufferActive())
-        { 
+        {
             if (grounded)
             {
                 _rb.velocity = new Vector2(_rb.velocity.x, jump);
@@ -174,7 +178,11 @@ public class Controls : MonoBehaviour
     void groundCheck()
     {
         grounded = false;
-        colls = Physics2D.OverlapCircleAll(transform.position + Vector3.up * deccalageGroundcheck, _monColl.bounds.extents.x * 0.9f);
+
+        Vector3 offset = Vector3.right * deccalageGroundcheckX;
+        Vector3 circlePosition = transform.position + Vector3.up * deccalageGroundcheck + offset;
+
+        colls = Physics2D.OverlapCircleAll(circlePosition, _monColl.bounds.extents.x * 0.5f);
         foreach (Collider2D coll in colls)
         {
             if (coll != _monColl && !coll.isTrigger)
@@ -207,9 +215,10 @@ public class Controls : MonoBehaviour
     //Sliding
     private void _ApplyWallDetection()
     {
-        IsTouchingWall = GetComponent<WallDetector>().DetectWallNearBy();
+        IsTouchingWallLeft = _detector.DetectWallNearByLeft();
+        IsTouchingWallRight = _detector.DetectWallNearByLeft();
     }
-    public bool IsSliding => IsTouchingWall && !grounded;
+    public bool IsSliding => (IsTouchingWallLeft || IsTouchingWallRight) && !grounded;
 
     //Wall jump01
     //Wall Jump
@@ -217,24 +226,21 @@ public class Controls : MonoBehaviour
 
     public void WallJumpStart()
     {
-        _orientX = -WallDetector.orientDetection;
         _wallJumpTimer = 0f;
         _UpdateWallJump();
     }
 
     private void _UpdateWallJump()
     {
+        _wallJumpTimer += Time.deltaTime;
 
-
-            _wallJumpTimer += Time.deltaTime;
-
-        if (_wallJumpTimer > 0.5f)
+        if (_wallJumpTimer < 0.5f)
         {
             Vector2 velocity = _rb.velocity;
 
             horizontal = 9 * _orientX;
             velocity.y = 6;
-            //Debug.Log("orientX " + _orientX);
+            //Debug.Log("orientX " + _orientX
 
             //_rb.velocity = velocity;
             _rb.velocity = new Vector2(horizontal, 6f);
@@ -347,8 +353,12 @@ public class Controls : MonoBehaviour
         {
             _monColl = GetComponent<CapsuleCollider2D>();
         }
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(transform.position + Vector3.up * deccalageGroundcheck, _monColl.bounds.extents.x * 0.9f);
+        Gizmos.color = Color.red;
+
+        Vector3 offset = Vector3.right * deccalageGroundcheckX;
+        Vector3 circlePosition = transform.position + Vector3.up * deccalageGroundcheck + offset;
+
+        Gizmos.DrawWireSphere(circlePosition, _monColl.bounds.extents.x * 0.5f);
     }
 
     [Header("Debug")]
