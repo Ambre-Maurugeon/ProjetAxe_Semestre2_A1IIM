@@ -22,7 +22,7 @@ public class Potions : MonoBehaviour
    
     void Update()
     {
-        if(inTrigger && Input.GetKeyDown(KeyCode.F) && !startingPot){
+        if(inTrigger && Input.GetKeyDown(KeyCode.E) && !startingPot){
             startingPot = true;
             //Debug.Log("Boit la potion avec " + Life.ActualHealth);
             //Debug.Log("A bu la potion a " + Life.ActualHealth);

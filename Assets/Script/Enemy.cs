@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     [Header("Defense")]
     [SerializeField] private int InitialHealth=50;
     [SerializeField] private int dmgPlayerAttack=10;
+    [SerializeField] private float _enemyInvincibilityDuration=0.5f;
 
     [Header("Attaque")]
     public int damageColl;
@@ -18,8 +19,11 @@ public class Enemy : MonoBehaviour
     private Life _lifeScript;   //recup script vie player pr la fonction TakeDamage()
 
     //Enemy Life 
+    [HideInInspector]
+    public bool justAttacked=false;
     private int ActualHealth;
     private bool dead=false;
+    private bool _enemyInvincibility=false;
 
     //Physic Enemy
     private SpriteRenderer skin;
@@ -71,7 +75,8 @@ public class Enemy : MonoBehaviour
         if (positions.Length != 0){
             Move();
         }
-        if (Input.GetMouseButtonDown(0)){
+        if (Input.GetMouseButtonDown(0) && !_enemyInvincibility){
+            StartCoroutine(EnemyInvicibility());
             StartCoroutine(AttackOpponent(dmgPlayerAttack));
         }
         RefreshUI();
@@ -86,6 +91,7 @@ public class Enemy : MonoBehaviour
         if(inTrigger){
             StartCoroutine(_lifeScript.Invicibility());          // au moment où le joueur attaque il est safe (check pertinence)
             ActualHealth -= dmg;
+            justAttacked = true;
         } 
         
     }
@@ -111,23 +117,32 @@ public class Enemy : MonoBehaviour
             //while (Life.ActualHealth>0){
                 if (collision.contacts[0].normal.y<0){       // contact par le haut de l'objet
                     ActualHealth -= 5;
-                    rb_player.AddForce(Vector2.up * 3f, ForceMode2D.Impulse);    
+                    //rb_player.AddForce(Vector2.up * 1.5f, ForceMode2D.Impulse);    
                 }
                 else{
                     _lifeScript.TakeDamage(damageColl);
                     //rb_player.AddForce(Vector2.down * 5f, ForceMode2D.Impulse);
                 }
-                if(collision.contacts[0].normal.x<0){
-                    rb_player.AddForce(Vector2.right * 10f, ForceMode2D.Impulse);
-                }
-                else{
-                    rb_player.AddForce(Vector2.left * 10f, ForceMode2D.Impulse);
-                }
+                // if(collision.contacts[0].normal.x<0){
+                //     rb_player.AddForce(Vector2.right * 10f, ForceMode2D.Impulse);
+                // }
+                // else{
+                //     rb_player.AddForce(Vector2.left * 10f, ForceMode2D.Impulse);
+                // }
                 //yield return new WaitForSeconds(0.5f);
             //}
             //for (int i= 0; i<6; i++){ 
             //}
         }
+    }
+
+    //Invincibilité de l'ennemi pr ne pas spam
+    private IEnumerator EnemyInvicibility(){
+        //Debug.Log("debut invicibilité enemy");
+        _enemyInvincibility = true;
+        yield return new WaitForSeconds(_enemyInvincibilityDuration); // tps d'invincibilité
+        _enemyInvincibility = false;
+        //Debug.Log("fin d'invicibilité enemy");
     }
 
     //Mort de l'ennemi

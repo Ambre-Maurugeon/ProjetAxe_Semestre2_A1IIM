@@ -32,13 +32,11 @@ public class EnemyBulletsAttack : MonoBehaviour
     [SerializeField] private Vector3[] _firePointPos;
 
 //Attack
+    [HideInInspector] public bool canAttack;
     private float cooldownTimer = Mathf.Infinity;
 //Random positions de tir
     private float changePosTimer = 0;
     private System.Random rdm;
-
-//Autres
-        //private bool inTrigger;
 
     //Anim
     private Animator anim;
@@ -53,19 +51,22 @@ public class EnemyBulletsAttack : MonoBehaviour
         foreach(var data in _pattern2Data){
             firePoints.Add(data.firePoint);
         }
-        Debug.Log("firePoints" + firePoints.Count);
+        canAttack = true;
     }
 
     void Update(){
-        if(GetComponent<ScreenVisibility>().OnScreen == true){
-            if(_pattern2Data.Length != 0){
-                FindNewPosition();
+        if(canAttack){
+            if(GetComponent<ScreenVisibility>().OnScreen == true)
+            {
+                if(_pattern2Data.Length != 0){
+                    FindNewPosition();
+                }
+                if(cooldownTimer>attackCooldown){
+                    Attack();
+                }
             }
-            if(cooldownTimer>attackCooldown){
-                Attack();
-            }
+            cooldownTimer+= Time.deltaTime;
         }
-        cooldownTimer+= Time.deltaTime;
     }
 
     private void Attack(){
@@ -102,7 +103,7 @@ public class EnemyBulletsAttack : MonoBehaviour
         foreach (var fireball in fireballs) {
             if (!fireball.activeInHierarchy) {
                 fireball.transform.position = firePoint.position;
-                fireball.GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
+                fireball.GetComponent<Projectile>().SetDirection(Mathf.Sign(firePoint.position.x - transform.position.x));
                 break;
             }
         }
@@ -158,19 +159,4 @@ public class EnemyBulletsAttack : MonoBehaviour
     }
 
 
-
-//inTrigger
-    //  void OnTriggerEnter2D(Collider2D truc)
-    // {
-    //     if (truc.tag == "Player") {
-    //         inTrigger=true;
-    //     }
-    // }
-
-    // void OnTriggerExit2D(Collider2D truc)
-    // {
-    //     if (truc.tag == "Player") {
-    //         inTrigger=false;
-    //     }
-    // }
 }

@@ -43,7 +43,7 @@ public class Projectile : MonoBehaviour
     }
    }
 
-//Direction droite gauche (Pattern1)
+//Direction horizontale (Pattern1)
    public void SetDirection(float _direction)
    {
     lifetime =0;
@@ -54,7 +54,7 @@ public class Projectile : MonoBehaviour
     boxCollider.enabled=true;
 
     float localScaleX = transform.localScale.x;
-    if(Mathf.Sign(localScaleX)!=_direction){
+    if(Mathf.Sign(localScaleX)==_direction){
         localScaleX=-localScaleX;
     }
 

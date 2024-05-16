@@ -56,6 +56,10 @@ public class Controls : MonoBehaviour
     private float dashingCooldown = 1f;
     private float horizontal;
 
+    //Audio
+    private AudioSource _audioSource;
+    private AudioController _audioData;
+
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +69,10 @@ public class Controls : MonoBehaviour
         _skin = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         _detector = GetComponent<WallDetector>();
+
+        //Audio
+        _audioSource = GetComponent<AudioSource>();
+        _audioData =  GetComponent<AudioController>();
 
         _CancelJumpBuffer();
     }
@@ -107,20 +115,23 @@ public class Controls : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            if (IsSliding)
-            {
-                IsWallJumping = true;
-                WallJumpStart();
-            }
-            else if (grounded)
-            {
-                _rb.velocity = new Vector2(_rb.velocity.x, jump);
-            }
-            else if (bonusJump > 0)
-            {
-                _rb.velocity = new Vector2(_rb.velocity.x, jump * 2 / 3);
-                bonusJump = 0;
-            }// initialisations jumpBuffer
+            if(IsSliding || grounded || bonusJump > 0){
+                SetUpAudio("jump",true);
+                if (IsSliding)
+                {
+                    IsWallJumping = true;
+                    WallJumpStart();
+                }
+                else if (grounded)
+                {
+                    _rb.velocity = new Vector2(_rb.velocity.x, jump);
+                }
+                else if (bonusJump > 0)
+                {
+                    _rb.velocity = new Vector2(_rb.velocity.x, jump * 2 / 3);
+                    bonusJump = 0;
+                }
+            }  // initialisations jumpBuffer
             else
             {
                 _ResetJumpBuffer();
@@ -199,6 +210,7 @@ public class Controls : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
+        SetUpAudio("dash",true);
         float originalGravity = _rb.gravityScale;
         _rb.gravityScale = 0f;
         _rb.velocity = new Vector2(horizontal * dashingPower, 0f);
@@ -209,6 +221,18 @@ public class Controls : MonoBehaviour
         isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
+    }
+
+    //Audio
+    private void SetUpAudio(string label, bool play){
+        // set up l'audio clip
+        _audioSource.clip = _audioData.GetAudioByLabel(label);
+        // play ou pas play
+        if(play){
+            _audioSource.Play(); 
+        } else{
+            _audioSource.Stop();
+        }
     }
 
 
@@ -340,9 +364,11 @@ public class Controls : MonoBehaviour
         anim.SetFloat("velocityX", Mathf.Abs(_rb.velocity.x));
         anim.SetFloat("velocityY", _rb.velocity.y);
         anim.SetBool("grounded", grounded);
+        //Attack
         if (Input.GetMouseButtonDown(0))
         {
             anim.SetTrigger("attack");
+            SetUpAudio("slash",true);
             slash.GetComponent<Animator>().SetTrigger("slash");
         }
     }
