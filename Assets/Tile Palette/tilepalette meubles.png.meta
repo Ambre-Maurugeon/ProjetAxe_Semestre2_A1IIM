@@ -1,0 +1,4646 @@
+fileFormatVersion: 2
+guid: 266cbdf9ce406da47bec576bc6229a17
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tilepalette meubles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee69e69e93cbde4d9f4a8add5abe107
+      internalID: 1832470094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3130b1697541b04d8d3b3698492f408
+      internalID: -1869444277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa6621192a05c0488ddba54acd29c5b
+      internalID: 553872777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_3
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3caf7d1b61658549bec61c146ca3754
+      internalID: 1672283262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b6071afb64bdd49983be1a512dfa3c
+      internalID: 1715032447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_5
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d50ffe787ced84c9b8e06580ce0b8c
+      internalID: 264258470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_6
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d210c0ed2bbd387439fd6fe3d16ce2d4
+      internalID: -963705311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_7
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa156cc9444d79346a2480cddd939c75
+      internalID: 885607780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_8
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8903e6d4993d64a43a4127a613d2e986
+      internalID: 1966748167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_9
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b14853240f2ab41b5606bba9d3d2b4
+      internalID: -1626657018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_10
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1cbab6600c74a54f9615d6c5d0006ee
+      internalID: -1220785080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_11
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8bd90b0266177439bd52112e51e786
+      internalID: 716613226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_12
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08982c758a2a9ae40bdc8882cccf0477
+      internalID: 559017876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_13
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ab6c86737897542afc2994e847235e
+      internalID: 121580999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_14
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b17deb0344f4f46b5d8263b5365e76
+      internalID: -1306279010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f70f48022b6aa4bb1a65c11274f168
+      internalID: -1562151029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_16
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d85275e79b0ac54aabf0a49122473c3
+      internalID: -1056918862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ab41b14fcb592408f018a79baa177d
+      internalID: 820357985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_18
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36acdac454d20d419b90af7c7770853
+      internalID: 95369950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e84136d6637d548820c436a419ff24
+      internalID: -1752328512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_20
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1076b793935bae24da8117382ff87bb3
+      internalID: 1338922887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_21
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a82ec1155d794643b276dbd2234c870
+      internalID: -462177288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_22
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2f9d017dfbce44c912bd6cf86db89f
+      internalID: 2069943719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_23
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d5daf8af155e443b84d9098692cacf
+      internalID: 259883155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_24
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45dc3191e72b4f94591c47ac1c57f7bc
+      internalID: -1233467526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_25
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea733593b191b7f4dbb5464893a1548a
+      internalID: 3868029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_26
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d5d303ebd029f4b9e6b862090f114d
+      internalID: 1105994485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_27
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1680151744f7cdc4ab6d6b442a35a8f8
+      internalID: 20465985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_28
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e541338044e551845a338d7cff13c27a
+      internalID: 850895180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_29
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc55d1abc46bbe0488a678472e8d055b
+      internalID: -1296571593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_30
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ea72cd0dadd0742b3fcae30e9da88f
+      internalID: 1411737366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_31
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91ca087c1ceb414abca957341c44ff8
+      internalID: -2042837432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_32
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14224695e6926d444a89ff3a840c5482
+      internalID: -1875006257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c6de0401e8993429b7d6ecb2bbeec7
+      internalID: -2051004137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_34
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce462f495a7a714480aa66707aebb24
+      internalID: 120281753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_35
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578b3a20102e0c847ae87ac352abd8da
+      internalID: -1658662002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_36
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ebaf8279b8845341a7641039b098188
+      internalID: -1214880783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_37
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c68928353c571a49aa77a8f977abb63
+      internalID: -614054149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_38
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61382d244d3d67d42afec9449b18ada0
+      internalID: 1588293337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_39
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e69b021a3ba9514988e20e75dbfbc02
+      internalID: 288200970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_40
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf3a81f984da4d4885a9006867ba9c4
+      internalID: -1070310874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_41
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50a300038e64cc47aa70ff4f672cc86
+      internalID: -2074458844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_42
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8397b2b31440748a66cb0b2ee13816
+      internalID: -1916629902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_43
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0c23016ac5c184297619bc5d3be539
+      internalID: 1589853804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_44
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbac92b2e286cc469443263a4c02f61
+      internalID: -353608861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_45
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a7bf4dd6b49964b82d1fd4dacaea73
+      internalID: -1274421980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_46
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d8eb0b7213a5145bea0cc7e6068e83
+      internalID: 197985530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_47
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da46e350a77aeb647bf6f01b151b22c5
+      internalID: 1514063985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_48
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3bef1b5aef92a44b0321bab823ec0a
+      internalID: 871748718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_49
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4331de58b48b36a459a9332e96e782ed
+      internalID: -582502185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_50
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edae5bcf39f2b8a45a1aa706d4e53345
+      internalID: 1913451049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd885cf517b399745b7c48ed2f2470a3
+      internalID: -1854472911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_52
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246cce4effc70f24ea95748abec34049
+      internalID: -1386242968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_53
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05aae7771cd55104da1c6e13de65d518
+      internalID: -692280291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_54
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5b2eaf1c178b649aef16a47882a337
+      internalID: 1482760286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_55
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e111bc0fd3f814caa659fb027ed0c4
+      internalID: -2057912641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_56
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5518a69d4874f534d9b738300adfbc53
+      internalID: 1917549436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_57
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a5650dfa913b949a76832a2d6a00be
+      internalID: -944431163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_58
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d94e8bc14be374db7d4dea8d696d3a
+      internalID: 875692099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_59
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135fe24054c5e1d459b7e85492903e50
+      internalID: 338100928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_60
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36cc6ff0adb9354886c5ceb40b711f3
+      internalID: -1518109299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_61
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a970c2a46e3d7304498cede326bc979f
+      internalID: 864773906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92dbd5e369e53ca4d915581150403236
+      internalID: 549651703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_63
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441b6c4c1c533db4484510f44e0fed38
+      internalID: -1485913643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_64
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29a088e4dd614546af7f76026f14230
+      internalID: -1611440786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_65
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44737fc00a3817b4e9c7b147dc1c50a3
+      internalID: -234950817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_66
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae413c253c5a5cd4e95c257d1bc06e74
+      internalID: 1597422630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_67
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245fd3e98f2801040b15e73095af12c3
+      internalID: 685127003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_68
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7e489f98da34243a9fdacc29fca042
+      internalID: 979612549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_69
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f98c20b2dc9aa4fb71e0a5a6e44c54
+      internalID: 731036488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_70
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c15e9d9c6aa3474e99a4c8166feab8f
+      internalID: 1984006788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_71
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6150933222cbb244b085f78a6969cb3
+      internalID: 1710965007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_72
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0112b7b4ff99ad441a39fddfcb98b6ed
+      internalID: -1637144346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_73
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde5c5bf23932ff4db40dc1098602533
+      internalID: 2187011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_74
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7755ae1455c6ea4390807be89245ccc
+      internalID: -241467798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c788b9f0f1146c144838fca0cba02cb2
+      internalID: -1705138261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_76
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bede687d03378a3489c0bfad196700b9
+      internalID: -1363462818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_77
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecd9e5012ab7c14aa3fb02bb9f4f444
+      internalID: 2024833322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_78
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b4037a5dfeec54a9e7f63a770d9b5f
+      internalID: 2141630852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_79
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bc547550b8b164e87c9ac230a87e0e
+      internalID: -1305027809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_80
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d096a67bf0a9048a42a5581a74792c
+      internalID: 1674568886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_81
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a5ff0f3681a5e40bb24bc7412d677f
+      internalID: -260999403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_82
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fef81af67ce6c42a49993f75ccbbde
+      internalID: 598084926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_83
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d699d177cc77195488ade4703669b627
+      internalID: -1791074410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_84
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581e97e48cd35e344b7f1145fb00c0e4
+      internalID: -1042613006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_85
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc3f95ca06a6c8499b2d63c0517b1ef
+      internalID: 150567251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_86
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a04d6f45d80ff49abb1748d6b920e9
+      internalID: -69890244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_87
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439b82181dba49e4a936fae2a2670486
+      internalID: -707325371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_88
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165c222e683e8bc47be7179fb30b2a22
+      internalID: -1255697213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_89
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32dca00e2327ac3409d5ab7e0444621c
+      internalID: 1662527405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_90
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19320f75108eb1843b30b75ce9b812a6
+      internalID: -77685235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_91
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d078e860694694d9faa32a62da8182
+      internalID: 1315174307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_92
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982bcbe7143748f4fbc8b740f5d1bb8c
+      internalID: -1044076672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_93
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa30a6f701af4e4991840d531e3c104
+      internalID: 2042674361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_94
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289427775e92aa54d979b6598c983f74
+      internalID: 162368350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_95
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48644b548e837ab46adefcc5d3d80d26
+      internalID: -1171178049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_96
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790289f30d598694f92a82eac951b902
+      internalID: 318439356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5487b6dcf93e02841aef06298a36e42a
+      internalID: -1125395885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_98
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979a62c0625fbd34996197ca18a3057e
+      internalID: -281075161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_99
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02dca9b26e30361469e00170c8b640d1
+      internalID: 15971252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_100
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9e841927a218b4ab9929064b3c1726
+      internalID: -1624905822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_101
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22d8e85cd79fa4469669d42f952025b
+      internalID: 2095379410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_102
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56c100a451bb3b49a1be3b3d5ef7a7e
+      internalID: 1820269984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_103
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606d67a3c1afc584cb0e3bf8b83e05eb
+      internalID: 407192341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_104
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212a01f84a397da409df457e7bf88985
+      internalID: 1544999577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_105
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9e63cc9397fee45ab3a2cb391e50da
+      internalID: 1508013006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_106
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ef115ed14ae2640b6dc9366fb9b36e
+      internalID: -1889096527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_107
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2596c8511db39546ba8d83c13885fd7
+      internalID: 1472207869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b8b206b09072647b8211ce5ffa62f0
+      internalID: 1061818487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_109
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077c0df7278df8645aab5cd8ebf495cf
+      internalID: -1967678131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089e69707c53e4b479006d2608ea7726
+      internalID: -1482660964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_111
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8089012bf68f78a4fb66098965a3c2f7
+      internalID: 1543467330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_112
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e112966a6e78db644a46979bb88e5f98
+      internalID: -670804481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_113
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48021dd0605e08a459eb21750dadc6ef
+      internalID: 1458871107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_114
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d3bb1b3ff4dcc4a93e716ec677ba64
+      internalID: -1551050597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_115
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a100f6becafb9b0488fd04595c663c5f
+      internalID: 305987411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_116
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ddda0be4c3e254c822b1c0500efd33
+      internalID: 1213689758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_117
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e2d497391e23a418f17f2d6d45d72c
+      internalID: 1261940807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_118
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628917c2c0ba1e14dbdccb620cadd1fb
+      internalID: 1036439643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_119
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05b1adf022c2834cb602df390278118
+      internalID: -1939540676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_120
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e2251a0c668e9418fb140ab010ae17
+      internalID: -372683676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0ebdc5e582f2f41b285ec0fb9679ff
+      internalID: 443243672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_122
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ec924807faf3542b339a902aaefb48
+      internalID: 1705181325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_123
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ae66b955866db46b604ac60c20c935
+      internalID: -249820136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_124
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639f8f3f6979bbb40b9f77625a221ecf
+      internalID: -191924227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_125
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b858c96fed90640af3d84691128d0a
+      internalID: -1877165214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_126
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7330e6abe9e120948b665412405e78f1
+      internalID: 211895889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_127
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59a166c364fe4543879298c628039fa
+      internalID: -168147589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_128
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9729369e012ece742af7bb88c7aacfbb
+      internalID: -2140613877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_129
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c96f1d706e75740820617e346e5501
+      internalID: 1688924935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_130
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038a976198b319a49b7ab193d53e00bf
+      internalID: -1665973583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_131
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0388049a419b98d4b90d2aa9b5cd491e
+      internalID: -478653544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_132
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9aaf1ae35d3a624bbfd28b116b33ed4
+      internalID: -1050071004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8c05192154ea0428df86690e05f4bc
+      internalID: 90339924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_134
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a440473c49407c479792b4325f42816
+      internalID: -1441080066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_135
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1bb2fe8d1d2e64439a6c6853f0e37f0
+      internalID: -2035651800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_136
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa35c16c2b86a56409d19240a895916b
+      internalID: -788100150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_137
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19dc6195cbcc5b547be6c39f6961d0ab
+      internalID: -1614044796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_138
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c524a6c774a35c4eaaa1dcd5a48eaab
+      internalID: 320576309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_139
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecbecf3871613e4cb9da94c2ca7e781
+      internalID: 1184076677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_140
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d1993404d9a354c9e4d69cddbbe79e
+      internalID: -1707026637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_141
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfd03c0493dbc8419046bc1ff5a7042
+      internalID: -161044192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_142
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade4ad3094521ca44aa968413f8b51e3
+      internalID: -92142324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_143
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bfb4ebf2e16fa442b16f502d29990e1
+      internalID: -1329773494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_144
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583ce93017011d34cba7cb997ccd8b53
+      internalID: -482703973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_145
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf92bc3f0cf2b64c97e2d30f06948ee
+      internalID: -366645372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_146
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0dd1722b6f7254e862ceb380dbb22b
+      internalID: 1415284762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_147
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee87942e889ab842acad7daf04bb1f5
+      internalID: -370088653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_148
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3a041e02cd83d4f94df1f9c89dfa0b
+      internalID: -1714021555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_149
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0047755a2b56d9847ade597f24d6f8d2
+      internalID: -1546582773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_150
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ede7c68819ab9f4bac60acf9f7230c9
+      internalID: -768520860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_151
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00860ca7881f7b74b85856dad12ef0c9
+      internalID: 638173594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_152
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522179faa61ac1044924fcab1a79174f
+      internalID: 764728062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_153
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25cafe0baf732ff4ea093559a5cc6622
+      internalID: -485254532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_154
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17fb6bcac13e7b14d8aa5924561b6caa
+      internalID: 1391651653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_155
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fce1844615adae4eaf8862f9b800212
+      internalID: -442378414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_156
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547f1f673ca98064e9f1f6f95bf1a2b9
+      internalID: -1517573183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_157
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7590baecdad2e154eb1f658cc63c9741
+      internalID: 1532234268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_158
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e9d331ace50f94991c636152add1d2
+      internalID: -190427127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_159
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711970c35c7f281469bed16e0d867000
+      internalID: 586067664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_160
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85581a70df486f7489034c0dcaeccd03
+      internalID: 1156703529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_161
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc9a00ed7900d74d92bc135eaf7f49f
+      internalID: -695301993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_162
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26905bcb9cabcf4e995f8dd4860c71c
+      internalID: 855322784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_163
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9c5e4a603d1c844bb9a3c1072d1954
+      internalID: -549872205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_164
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ea2df4cc13a414fabd7cfb91dd5281
+      internalID: 1782230326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_165
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c76d9c3a1a993d4ca48d7ee27f95a7d
+      internalID: 1747885568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_166
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4666bea50f8f81141ab3ed08ead999bb
+      internalID: 889548447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_167
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769dec22a35695c42b8668778a59c473
+      internalID: -765586277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_168
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f71744ed6bd1634fb71f510fbeb3a6f
+      internalID: -1622800632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_169
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3528eb40c85534b827188b80ce1d11
+      internalID: 1203263685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_170
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd9b06fc7c98e446bec2f7e703410f4
+      internalID: -1369104051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_171
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4321248ccbb5df499cafbfa40bc5859
+      internalID: 1025183537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_172
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f8f1998dbf07147a346f5c7aa91acf
+      internalID: 1596952575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_173
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf15d4117cd6f4e429107d2ae523a690
+      internalID: -1900317913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_174
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be87c06c6ab20ea4aba85d48d14858fa
+      internalID: 2001429342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_175
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f654dffc3de4b9409237daa483b9a01
+      internalID: 1786976624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_176
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cc9558829215844a9dee8724ceabbe
+      internalID: 1175672477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_177
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107483546c85fca42b9f31bd0d39a938
+      internalID: 1553888905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_178
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75014fc158867cb478e6ec2e6bbf039d
+      internalID: 1654799339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_179
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325e773e4d1369f478f6f30a36c47547
+      internalID: -117743661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_180
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2c7e29a98c0d84a87bff3ba286e30c
+      internalID: 1332025708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_181
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6fb2b8cdf7d39449e681b71cf7d0b5
+      internalID: 1024501342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_182
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20178ab7bb3979442b74c44edafb49ac
+      internalID: 2065171646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_183
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa2ffca25bc7864f9bb163c7c2c4d1e
+      internalID: -46650576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_184
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af54dc9bcadec954dad1f82db18fc428
+      internalID: -204132172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_185
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041db3ab828c3d440929d3c348d5a87f
+      internalID: -911757188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_186
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b670baa3fce1bd4abff4522dd86ebb6
+      internalID: 907052839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_187
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49c69a91a1ba2147bf72e8847398a6d
+      internalID: 1683297767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_188
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81875f44c81821840a728131da926979
+      internalID: -1648580327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_189
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb44724b07f6ac240aceffce372f75fa
+      internalID: 453366516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_190
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb082d54d3249b4384c66c4ab575d55
+      internalID: 559601219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_191
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 2500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1207d2771392341a79bedd656729d4
+      internalID: -98739705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_192
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e023b109a2c4a84f85d034548e34809
+      internalID: 1856055937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_193
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51c816a1055e1d46897dc089a8a60c5
+      internalID: 1843201135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_194
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783d5f2af075e2e41b8ca07ed58f084d
+      internalID: -229471060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_195
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65e9bacd663df6489c24be970e6f7de
+      internalID: 1693337115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_196
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc034fce8d6f1447bad400f9a7316ea
+      internalID: -366124471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_197
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f154869dc4ae71c43a2d1ce9f327f2f5
+      internalID: 1209968143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_198
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce6f005fc3975342bfa4d18e66608d1
+      internalID: 343806749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_199
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4451bdd7b4bbd241aded96840987885
+      internalID: -865045100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_200
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eca65292975a8247b962c9435609edf
+      internalID: -754024142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_201
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0057a981fe4f1fd459ebaf10002fc5dc
+      internalID: 1073974974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_202
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d83a0071f2fc944a568520d125e929
+      internalID: -451395159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_203
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97eab0ae32b885745b70df0227c1aaba
+      internalID: -1408454451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_204
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10da8e113b95b743aee94abca2dc169
+      internalID: 2033711139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilepalette meubles_205
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7f6a6e845db724794e8f62ed5097cb
+      internalID: 2040903947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      tilepalette meubles_0: 1832470094
+      tilepalette meubles_1: -1869444277
+      tilepalette meubles_10: -1220785080
+      tilepalette meubles_100: -1624905822
+      tilepalette meubles_101: 2095379410
+      tilepalette meubles_102: 1820269984
+      tilepalette meubles_103: 407192341
+      tilepalette meubles_104: 1544999577
+      tilepalette meubles_105: 1508013006
+      tilepalette meubles_106: -1889096527
+      tilepalette meubles_107: 1472207869
+      tilepalette meubles_108: 1061818487
+      tilepalette meubles_109: -1967678131
+      tilepalette meubles_11: 716613226
+      tilepalette meubles_110: -1482660964
+      tilepalette meubles_111: 1543467330
+      tilepalette meubles_112: -670804481
+      tilepalette meubles_113: 1458871107
+      tilepalette meubles_114: -1551050597
+      tilepalette meubles_115: 305987411
+      tilepalette meubles_116: 1213689758
+      tilepalette meubles_117: 1261940807
+      tilepalette meubles_118: 1036439643
+      tilepalette meubles_119: -1939540676
+      tilepalette meubles_12: 559017876
+      tilepalette meubles_120: -372683676
+      tilepalette meubles_121: 443243672
+      tilepalette meubles_122: 1705181325
+      tilepalette meubles_123: -249820136
+      tilepalette meubles_124: -191924227
+      tilepalette meubles_125: -1877165214
+      tilepalette meubles_126: 211895889
+      tilepalette meubles_127: -168147589
+      tilepalette meubles_128: -2140613877
+      tilepalette meubles_129: 1688924935
+      tilepalette meubles_13: 121580999
+      tilepalette meubles_130: -1665973583
+      tilepalette meubles_131: -478653544
+      tilepalette meubles_132: -1050071004
+      tilepalette meubles_133: 90339924
+      tilepalette meubles_134: -1441080066
+      tilepalette meubles_135: -2035651800
+      tilepalette meubles_136: -788100150
+      tilepalette meubles_137: -1614044796
+      tilepalette meubles_138: 320576309
+      tilepalette meubles_139: 1184076677
+      tilepalette meubles_14: -1306279010
+      tilepalette meubles_140: -1707026637
+      tilepalette meubles_141: -161044192
+      tilepalette meubles_142: -92142324
+      tilepalette meubles_143: -1329773494
+      tilepalette meubles_144: -482703973
+      tilepalette meubles_145: -366645372
+      tilepalette meubles_146: 1415284762
+      tilepalette meubles_147: -370088653
+      tilepalette meubles_148: -1714021555
+      tilepalette meubles_149: -1546582773
+      tilepalette meubles_15: -1562151029
+      tilepalette meubles_150: -768520860
+      tilepalette meubles_151: 638173594
+      tilepalette meubles_152: 764728062
+      tilepalette meubles_153: -485254532
+      tilepalette meubles_154: 1391651653
+      tilepalette meubles_155: -442378414
+      tilepalette meubles_156: -1517573183
+      tilepalette meubles_157: 1532234268
+      tilepalette meubles_158: -190427127
+      tilepalette meubles_159: 586067664
+      tilepalette meubles_16: -1056918862
+      tilepalette meubles_160: 1156703529
+      tilepalette meubles_161: -695301993
+      tilepalette meubles_162: 855322784
+      tilepalette meubles_163: -549872205
+      tilepalette meubles_164: 1782230326
+      tilepalette meubles_165: 1747885568
+      tilepalette meubles_166: 889548447
+      tilepalette meubles_167: -765586277
+      tilepalette meubles_168: -1622800632
+      tilepalette meubles_169: 1203263685
+      tilepalette meubles_17: 820357985
+      tilepalette meubles_170: -1369104051
+      tilepalette meubles_171: 1025183537
+      tilepalette meubles_172: 1596952575
+      tilepalette meubles_173: -1900317913
+      tilepalette meubles_174: 2001429342
+      tilepalette meubles_175: 1786976624
+      tilepalette meubles_176: 1175672477
+      tilepalette meubles_177: 1553888905
+      tilepalette meubles_178: 1654799339
+      tilepalette meubles_179: -117743661
+      tilepalette meubles_18: 95369950
+      tilepalette meubles_180: 1332025708
+      tilepalette meubles_181: 1024501342
+      tilepalette meubles_182: 2065171646
+      tilepalette meubles_183: -46650576
+      tilepalette meubles_184: -204132172
+      tilepalette meubles_185: -911757188
+      tilepalette meubles_186: 907052839
+      tilepalette meubles_187: 1683297767
+      tilepalette meubles_188: -1648580327
+      tilepalette meubles_189: 453366516
+      tilepalette meubles_19: -1752328512
+      tilepalette meubles_190: 559601219
+      tilepalette meubles_191: -98739705
+      tilepalette meubles_192: 1856055937
+      tilepalette meubles_193: 1843201135
+      tilepalette meubles_194: -229471060
+      tilepalette meubles_195: 1693337115
+      tilepalette meubles_196: -366124471
+      tilepalette meubles_197: 1209968143
+      tilepalette meubles_198: 343806749
+      tilepalette meubles_199: -865045100
+      tilepalette meubles_2: 553872777
+      tilepalette meubles_20: 1338922887
+      tilepalette meubles_200: -754024142
+      tilepalette meubles_201: 1073974974
+      tilepalette meubles_202: -451395159
+      tilepalette meubles_203: -1408454451
+      tilepalette meubles_204: 2033711139
+      tilepalette meubles_205: 2040903947
+      tilepalette meubles_21: -462177288
+      tilepalette meubles_22: 2069943719
+      tilepalette meubles_23: 259883155
+      tilepalette meubles_24: -1233467526
+      tilepalette meubles_25: 3868029
+      tilepalette meubles_26: 1105994485
+      tilepalette meubles_27: 20465985
+      tilepalette meubles_28: 850895180
+      tilepalette meubles_29: -1296571593
+      tilepalette meubles_3: 1672283262
+      tilepalette meubles_30: 1411737366
+      tilepalette meubles_31: -2042837432
+      tilepalette meubles_32: -1875006257
+      tilepalette meubles_33: -2051004137
+      tilepalette meubles_34: 120281753
+      tilepalette meubles_35: -1658662002
+      tilepalette meubles_36: -1214880783
+      tilepalette meubles_37: -614054149
+      tilepalette meubles_38: 1588293337
+      tilepalette meubles_39: 288200970
+      tilepalette meubles_4: 1715032447
+      tilepalette meubles_40: -1070310874
+      tilepalette meubles_41: -2074458844
+      tilepalette meubles_42: -1916629902
+      tilepalette meubles_43: 1589853804
+      tilepalette meubles_44: -353608861
+      tilepalette meubles_45: -1274421980
+      tilepalette meubles_46: 197985530
+      tilepalette meubles_47: 1514063985
+      tilepalette meubles_48: 871748718
+      tilepalette meubles_49: -582502185
+      tilepalette meubles_5: 264258470
+      tilepalette meubles_50: 1913451049
+      tilepalette meubles_51: -1854472911
+      tilepalette meubles_52: -1386242968
+      tilepalette meubles_53: -692280291
+      tilepalette meubles_54: 1482760286
+      tilepalette meubles_55: -2057912641
+      tilepalette meubles_56: 1917549436
+      tilepalette meubles_57: -944431163
+      tilepalette meubles_58: 875692099
+      tilepalette meubles_59: 338100928
+      tilepalette meubles_6: -963705311
+      tilepalette meubles_60: -1518109299
+      tilepalette meubles_61: 864773906
+      tilepalette meubles_62: 549651703
+      tilepalette meubles_63: -1485913643
+      tilepalette meubles_64: -1611440786
+      tilepalette meubles_65: -234950817
+      tilepalette meubles_66: 1597422630
+      tilepalette meubles_67: 685127003
+      tilepalette meubles_68: 979612549
+      tilepalette meubles_69: 731036488
+      tilepalette meubles_7: 885607780
+      tilepalette meubles_70: 1984006788
+      tilepalette meubles_71: 1710965007
+      tilepalette meubles_72: -1637144346
+      tilepalette meubles_73: 2187011
+      tilepalette meubles_74: -241467798
+      tilepalette meubles_75: -1705138261
+      tilepalette meubles_76: -1363462818
+      tilepalette meubles_77: 2024833322
+      tilepalette meubles_78: 2141630852
+      tilepalette meubles_79: -1305027809
+      tilepalette meubles_8: 1966748167
+      tilepalette meubles_80: 1674568886
+      tilepalette meubles_81: -260999403
+      tilepalette meubles_82: 598084926
+      tilepalette meubles_83: -1791074410
+      tilepalette meubles_84: -1042613006
+      tilepalette meubles_85: 150567251
+      tilepalette meubles_86: -69890244
+      tilepalette meubles_87: -707325371
+      tilepalette meubles_88: -1255697213
+      tilepalette meubles_89: 1662527405
+      tilepalette meubles_9: -1626657018
+      tilepalette meubles_90: -77685235
+      tilepalette meubles_91: 1315174307
+      tilepalette meubles_92: -1044076672
+      tilepalette meubles_93: 2042674361
+      tilepalette meubles_94: 162368350
+      tilepalette meubles_95: -1171178049
+      tilepalette meubles_96: 318439356
+      tilepalette meubles_97: -1125395885
+      tilepalette meubles_98: -281075161
+      tilepalette meubles_99: 15971252
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
