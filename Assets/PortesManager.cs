@@ -8,11 +8,11 @@ public class PortesManager : MonoBehaviour
     [Tooltip ("Portes Fight qui mènent au 1er niveau de chaque étape")]
     public Transform[] Fight = new Transform[0];
 
-    [Tooltip ("Portes Enigme qui mènent au 1er niveau de chaque étape")]
-    public Transform[] Enigme = new Transform[0];
-
     [Tooltip ("Portes Survie qui mènent au 1er niveau de chaque étape")]
     public Transform[] Survie = new Transform[0];
+
+    [Tooltip ("Portes Enigme qui mènent au 1er niveau de chaque étape")]
+    public Transform[] Enigme = new Transform[0];
 
     [HideInInspector] public static int levelFight = 0;
     [HideInInspector] public static int levelEnigme = 0;
