@@ -26,6 +26,7 @@ public class EnemyBulletsAttack : MonoBehaviour
 
     [Header("Positions des points d'origine")]
 //Positions des points d'origine
+    [Tooltip("Description")]//description
     [SerializeField] private float cooldownChangePos = 10f;
 
     [FormerlySerializedAs("_firePoint01Pos")]

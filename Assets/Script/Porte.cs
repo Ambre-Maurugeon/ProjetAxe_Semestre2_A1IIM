@@ -26,15 +26,26 @@ public class Porte : MonoBehaviour
         if(inTrigger && Input.GetKeyDown(KeyCode.E)){
             anim.SetTrigger("open");
             Invoke("MoveTo", 1f);
-            
         }
     }
 
 //Déplacer
     private void MoveTo(){
-        GameObject.FindGameObjectWithTag("Player").transform.position = destination.transform.position;
-        Debug.Log("Prend la porte");
+        GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(destination.transform.position.x,destination.transform.position.y,GameObject.FindGameObjectWithTag("Player").transform.position.z);
+        //Debug.Log("Prend la porte");
+        
+
+            //PortesSpeciales.RefreshLevel(destination); // refresh le level (FES) en fonction du choix de la destination (FES)
+            //refreshlevel en fonction du tag du gameObject Porte lui mm
+            //(tag à mettre sur la porte d'origine)
     }
+
+// Portes Speciales
+    // si la porte est dans la liste des portes speciales dans PortesManager{
+    //     destination = PortesSpeciales.GetLevelDestination();
+    //     PortesSpeciales.RefreshLevel(destination)
+    // }
+
 
 
 //inTrigger
