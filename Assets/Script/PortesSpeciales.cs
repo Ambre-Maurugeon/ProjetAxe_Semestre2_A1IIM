@@ -4,35 +4,16 @@ using UnityEngine;
 
 public class PortesSpeciales : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+//Avoir la prochaine porte
+    public GameObject GetLevelDestination(string tag){
+        GameObject[] door = PortesManager.instance.doorsDict[tag];
+        return door[PortesManager.instance.levelsDict[tag]];
+    }
+
+//Refresh le niveau d'exp apres le passage 
+    public void RefreshLevel(string tag)
     {
-        
+        PortesManager.instance.levelsDict[tag]++;
+        Debug.Log("Level " + tag + " après passage: " + PortesManager.instance.levelsDict[tag]);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void RefreshLevel(GameObject destination){
-        if(destination.tag=="Fight"){
-            PortesManager.levelFight+=1;
-            Debug.Log("Level Fight : " + PortesManager.levelFight);
-        }
-        else if(destination.tag=="Survie"){
-            PortesManager.levelSurvie+=1;
-            Debug.Log("Level Survie : " + PortesManager.levelSurvie);
-        }
-        else if(destination.tag=="Enigme"){  
-            PortesManager.levelEnigme+=1;
-            Debug.Log("Level Enigme : " + PortesManager.levelSurvie);
-        }
-    }
-
-
-    // public void GetLevelDestination(){
-    //     GameObjet destination = PortesManager.//tag du 
-    // }
 }

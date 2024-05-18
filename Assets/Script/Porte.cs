@@ -7,6 +7,10 @@ public class Porte : MonoBehaviour
     private Vector3 _playerPos;
     [SerializeField] private GameObject destination;
 
+    //Portes spéciales
+    private PortesSpeciales _portesSpeciales;
+    private string[] Tags = new string[] { "Fight", "Survie","Enigme"};
+
     //Anim
     private Animator anim;
 
@@ -15,6 +19,8 @@ public class Porte : MonoBehaviour
     
     void Start()
     {
+        _portesSpeciales = FindObjectOfType<PortesSpeciales>();
+
         _playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
 
         anim = GetComponent<Animator>();
@@ -31,22 +37,34 @@ public class Porte : MonoBehaviour
 
 //Déplacer
     private void MoveTo(){
-        GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(destination.transform.position.x,destination.transform.position.y,GameObject.FindGameObjectWithTag("Player").transform.position.z);
-        //Debug.Log("Prend la porte");
-        
+        if(isSpecialDoor()){
+            _UpdateSpecialDoor();
+        } else {
+            GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(destination.transform.position.x, destination.transform.position.y, GameObject.FindGameObjectWithTag("Player").transform.position.z);
+            //Debug.Log("La porte est une porte basique, destination originale");
+        }
 
-            //PortesSpeciales.RefreshLevel(destination); // refresh le level (FES) en fonction du choix de la destination (FES)
-            //refreshlevel en fonction du tag du gameObject Porte lui mm
-            //(tag à mettre sur la porte d'origine)
     }
 
 // Portes Speciales
-    // si la porte est dans la liste des portes speciales dans PortesManager{
-    //     destination = PortesSpeciales.GetLevelDestination();
-    //     PortesSpeciales.RefreshLevel(destination)
-    // }
+    private void _UpdateSpecialDoor()
+    {
+        //Debug.Log("La porte est une porte spéciale de type " + gameObject.tag);
+        destination = _portesSpeciales.GetLevelDestination(gameObject.tag);
+        GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(destination.transform.position.x, destination.transform.position.y, GameObject.FindGameObjectWithTag("Player").transform.position.z);
+        _portesSpeciales.RefreshLevel(gameObject.tag);
+    }
 
-
+    private bool isSpecialDoor(){
+        foreach (string tag in Tags)
+        {
+            if (gameObject.tag == tag)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
 //inTrigger
     private void OnTriggerEnter2D(Collider2D other){

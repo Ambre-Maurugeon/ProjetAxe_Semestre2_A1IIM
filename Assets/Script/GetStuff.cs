@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GetStuff : MonoBehaviour
+public class GetKey : MonoBehaviour
 {
     [SerializeField] private Image _imageStuff;
+    [SerializeField] private GetObjetCache tableau;
     private bool inTrigger;
     public bool kept=false;
 
@@ -20,7 +21,7 @@ public class GetStuff : MonoBehaviour
     void Update()
     {
         if(inTrigger){
-            if(Input.GetKeyDown(KeyCode.E)){
+            if(Input.GetKeyDown(KeyCode.E) && tableau.objectDiscovered){
                 Debug.Log(gameObject.name + " récupéré");
                 kept = true;
                 _imageStuff.enabled = true;

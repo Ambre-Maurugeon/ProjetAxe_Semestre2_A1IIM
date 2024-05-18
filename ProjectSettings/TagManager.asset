@@ -9,6 +9,9 @@ TagManager:
   - GlobalVolume
   - stuff
   - Pause
+  - Fight
+  - Enigme
+  - Survie
   layers:
   - Default
   - TransparentFX
