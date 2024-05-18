@@ -72,7 +72,7 @@ public class Controls : MonoBehaviour
 
         //Audio
         _audioSource = GetComponent<AudioSource>();
-        _audioData = GetComponent<AudioController>();
+        _audioData =  GetComponent<AudioController>();
 
         _CancelJumpBuffer();
     }
@@ -115,9 +115,8 @@ public class Controls : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            if (IsSliding || grounded || bonusJump > 0)
-            {
-                SetUpAudio("jump", true);
+            if(IsSliding || grounded || bonusJump > 0){
+                SetUpAudio("jump",true);
                 if (IsSliding)
                 {
                     IsWallJumping = true;
@@ -211,7 +210,7 @@ public class Controls : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
-        SetUpAudio("dash", true);
+        SetUpAudio("dash",true);
         float originalGravity = _rb.gravityScale;
         _rb.gravityScale = 0f;
         _rb.velocity = new Vector2(horizontal * dashingPower, 0f);
@@ -225,17 +224,13 @@ public class Controls : MonoBehaviour
     }
 
     //Audio
-    private void SetUpAudio(string label, bool play)
-    {
+    private void SetUpAudio(string label, bool play){
         // set up l'audio clip
         _audioSource.clip = _audioData.GetAudioByLabel(label);
         // play ou pas play
-        if (play)
-        {
-            _audioSource.Play();
-        }
-        else
-        {
+        if(play){
+            _audioSource.Play(); 
+        } else{
             _audioSource.Stop();
         }
     }
@@ -245,7 +240,7 @@ public class Controls : MonoBehaviour
     private void _ApplyWallDetection()
     {
         IsTouchingWallLeft = _detector.DetectWallNearByLeft();
-        IsTouchingWallRight = _detector.DetectWallNearByRight();
+        IsTouchingWallRight = _detector.DetectWallNearByLeft();
     }
     public bool IsSliding => (IsTouchingWallLeft || IsTouchingWallRight) && !grounded;
 
@@ -267,12 +262,13 @@ public class Controls : MonoBehaviour
         {
             Vector2 velocity = _rb.velocity;
 
-            horizontal = 3 * -_orientX;
+            horizontal = 9 * _orientX;
             velocity.y = 6;
             //Debug.Log("orientX " + _orientX
 
             //_rb.velocity = velocity;
             _rb.velocity = new Vector2(horizontal, 6f);
+
         }
         else if (!grounded)
         {
@@ -372,7 +368,7 @@ public class Controls : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             anim.SetTrigger("attack");
-            SetUpAudio("slash", true);
+            SetUpAudio("slash",true);
             slash.GetComponent<Animator>().SetTrigger("slash");
         }
     }
@@ -406,9 +402,6 @@ public class Controls : MonoBehaviour
         GUILayout.Label($"grounded = {grounded}");
         GUILayout.Label($"Horizontal Velocity = {_rb.velocity.x}");
         GUILayout.Label($"Vertical Velocity = {_rb.velocity.y}");
-        GUILayout.Label($"IsTouchingWallRight = {IsTouchingWallRight}");
-        GUILayout.Label($"IsTouchingWallLeft = {IsTouchingWallLeft}");
-        GUILayout.Label($"orientX = {_orientX}");
         GUILayout.EndVertical();
     }
 }
