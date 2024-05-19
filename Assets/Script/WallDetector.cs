@@ -3,7 +3,8 @@ using UnityEngine;
 public class WallDetector : MonoBehaviour
 {
     [Header("Wall Detection")]
-    [SerializeField] private Transform[] _wallDetectionPoints;
+    [SerializeField] private Transform[] _wallDetectionPointsLeft;
+    [SerializeField] private Transform[] _wallDetectionPointsRigth;
     [SerializeField] private float _detectionLength = 0.05f;
     [SerializeField] private LayerMask _wallLayerMask;
 
@@ -12,7 +13,7 @@ public class WallDetector : MonoBehaviour
 
     public bool DetectWallNearByRight()
     {
-        foreach (Transform wallDetectionPoint in _wallDetectionPoints)
+        foreach (Transform wallDetectionPoint in _wallDetectionPointsRigth)
         {
 
             RaycastHit2D hitRight = Physics2D.Raycast(
@@ -33,7 +34,7 @@ public class WallDetector : MonoBehaviour
     }
     public bool DetectWallNearByLeft()
     {
-        foreach (Transform wallDetectionPoint in _wallDetectionPoints)
+        foreach (Transform wallDetectionPoint in _wallDetectionPointsLeft)
         {
             RaycastHit2D hitLeft = Physics2D.Raycast(
                 wallDetectionPoint.position, // origine
