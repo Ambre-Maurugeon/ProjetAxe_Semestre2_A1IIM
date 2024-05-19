@@ -13,6 +13,7 @@ public class Controls : MonoBehaviour
 
     [Header("Vertical Mvt")]
     public float jump;
+    public float bonusJumpStrength;
 
     [Header("Attaque")]
     [SerializeField] private GameObject slash;
@@ -129,7 +130,7 @@ public class Controls : MonoBehaviour
                 }
                 else if (bonusJump > 0)
                 {
-                    _rb.velocity = new Vector2(_rb.velocity.x, jump * 2 / 3);
+                    _rb.velocity = new Vector2(_rb.velocity.x, bonusJumpStrength);
                     bonusJump = 0;
                 }
             }  // initialisations jumpBuffer
