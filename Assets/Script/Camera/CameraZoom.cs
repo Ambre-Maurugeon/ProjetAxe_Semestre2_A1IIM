@@ -18,7 +18,7 @@ public class CameraZoom : MonoBehaviour
     private bool sors=false;
 
     void Awake(){
-        _camera=GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>(); 
+        _camera=GameObject.FindGameObjectWithTag("VirtualCamera").GetComponent<Camera>(); 
         initSettings = _camera.orthographicSize;
     }
 

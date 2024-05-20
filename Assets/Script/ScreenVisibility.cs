@@ -12,7 +12,7 @@ public class ScreenVisibility : MonoBehaviour
     public Camera mainCamera;
 
     [HideInInspector]
-    public bool OnScreen=false;
+    public bool OnScreen = false;
 
     void Update()
     {
@@ -29,7 +29,8 @@ public class ScreenVisibility : MonoBehaviour
             //Debug.Log("Les deux objets sont à l'écran ");
             OnScreen = true;
         }
-        else{
+        else
+        {
             OnScreen = false;
         }
     }

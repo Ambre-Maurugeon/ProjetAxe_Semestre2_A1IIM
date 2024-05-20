@@ -12,6 +12,7 @@ TagManager:
   - Fight
   - Enigme
   - Survie
+  - VirtualCamera
   layers:
   - Default
   - TransparentFX
